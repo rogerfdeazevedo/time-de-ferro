@@ -23,17 +23,7 @@ Este projeto deve apresentar o conteúdo apresentado em aula:
 * Persistência de dados com SQLite  
 * Orientação de tela (portrait e landscape)
 
-## Progresso do Projeto
-
-<br>
-
-![progresso-projeto][progresso-projeto-url]
-
-<br>
-
-> Em ordem de prioridade
-
-<br>
+---
 
 ## Game Design Document
 
@@ -58,6 +48,18 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 <br/>
 
 ---
+
+## Progresso do Projeto
+
+<br>
+
+![progresso-projeto][progresso-projeto-url]
+
+<br>
+
+> Em ordem de prioridade
+
+<br>
 
 ## Configuração de desenvolvimento
 
