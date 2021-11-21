@@ -23,7 +23,7 @@ Este projeto deve apresentar o conteúdo apresentado em aula:
 * Persistência de dados com SQLite  
 * Orientação de tela (portrait e landscape)
 
-## Game Desing Document
+## Game Design Document
 
  <br/>
 
