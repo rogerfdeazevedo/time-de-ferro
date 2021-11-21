@@ -86,7 +86,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 [repository-url]: https://github.com/rogerfdeazevedo/timedeferro-app
 
-[cloud-provider-url]: #
+[cloud-provider-url]: https://github.com/rogerfdeazevedo/timedeferro-app/wiki
 
 [linkedin-url]: https://www.linkedin.com/in/roger-de-azevedo/
 
