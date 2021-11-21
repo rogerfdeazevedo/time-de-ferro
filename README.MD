@@ -23,20 +23,29 @@ Este projeto deve apresentar o conteúdo apresentado em aula:
 * Persistência de dados com SQLite  
 * Orientação de tela (portrait e landscape)
 
+## Progresso do Projeto
+
+<br>
+
+![progresso-projeto][progresso-projeto-url]
+
+<br>
+
+> Em ordem de prioridade
+
+<br>
+
 ## Game Design Document
 
  <br/>
 
-### Identidade do jogo
-
+**Identidade do jogo**
 
 **_Professor Artigo_** é um renomado “mestre-prático-teórico”, embasado na “literatura sagrada” da ciência e tecnologia. Ele é o mentor de um grupo de jovens heróis em treinamento, conhecidos como **_Time de Ferro_**.
 
 **_Professor Artigo_** precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problema na cidade de **_“Saranda City”_**. O novo chefão do crime do Bairro Proibido - **_Lirou Diou_** não economiza esforços para aterrorizar as pessoas na cidade.
 
-<br/>
-
-### Descrição da mecânica
+**Descrição da mecânica**
 
 O jogador assume o papel do personagem principal, que é um mentor de heróis. Problemas e situações serão apresentados, e ele precisa escolher em uma lista um herói com as melhores habilidades para resolver aquela situação. 
 
@@ -89,6 +98,8 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 [cloud-provider-url]: #
 
 [linkedin-url]: https://www.linkedin.com/in/roger-de-azevedo/
+
+[progresso-projeto-url]: img/progresso-projeto.png
 
 [wiki]: https://github.com/rogerfdeazevedo/timedeferro-app/wiki
 
