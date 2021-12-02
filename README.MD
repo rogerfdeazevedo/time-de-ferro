@@ -87,7 +87,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 1. Fork it (<https://github.com/seunome/seuprojeto/fork>)
 2. Crie a sua feature branch (`git checkout -b feature/fooBar`)
 3. Commit seu desenvolvimento (`git commit -am 'Add some fooBar'`)
-4. Sua as alterações para sua branch (`git push origin feature/fooBar`)
+4. Suba as alterações para sua branch (`git push origin feature/fooBar`)
 5. Cria um novo Pull Request
 
 <!-- Markdown link & img dfn's -->
