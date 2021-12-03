@@ -33,11 +33,11 @@ Este projeto deve apresentar o conteúdo apresentado em aula:
 
 **_Professor Artigo_** é um renomado “mestre-prático-teórico”, embasado na “literatura sagrada” da ciência e tecnologia. Ele é o mentor de um grupo de jovens heróis em treinamento, conhecidos como **_Time de Ferro_**.
 
-**_Professor Artigo_** precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problema na cidade de **_“Saranda City”_**. O novo chefão do crime do Bairro Proibido - **_Lirou Diou_** não economiza esforços para aterrorizar as pessoas na cidade.
+Ele precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problema na cidade de **_“Saranda City”_**. O novo chefão do crime do Bairro Proibido - **_Lirou Diou_** não economiza esforços para aterrorizar as pessoas na cidade.
 
 **Descrição da mecânica**
 
-O jogador assume o papel do personagem principal, que é um mentor de heróis. Problemas e situações serão apresentados, e ele precisa escolher em uma lista um herói com as melhores habilidades para resolver aquela situação. 
+Conformee os problemas e situações serão apresentados, o Jogador precisa escolher em uma lista um herói com as melhores habilidades para resolver aquela situação. 
 
 Existe uma probabilidade de sucesso de acordo com o herói escolhido, e demais escolhadas feitas pelo jogador.
 
@@ -53,7 +53,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 <br>
 
-![progresso-projeto][progresso-projeto-url]
+<!--![progresso-projeto][progresso-projeto-url]-->
 
 <br>
 
