@@ -1,11 +1,11 @@
 package br.com.rfaengines.timedeferro_app.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import br.com.rfaengines.timedeferro_app.R;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                Carragar variaveis do jogo
-                Intent intent = new Intent(MainActivity.this, TutorialActivity.class);
+                Intent intent = new Intent(MainActivity.this, HistoriaActivity.class);
                 startActivity(intent);
             }
         });

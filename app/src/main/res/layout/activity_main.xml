@@ -55,7 +55,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_novo_jogo_id"
             style="@style/Buttom"
-            android:text="@string/new_game"
+            android:text="@string/btn_new_game"
             app:layout_constraintStart_toStartOf="@id/vw_container_components_id"
             app:layout_constraintEnd_toEndOf="@id/vw_container_components_id"
             app:layout_constraintTop_toTopOf="@+id/vw_container_components_id" />
