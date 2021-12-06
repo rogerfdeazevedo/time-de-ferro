@@ -1,6 +1,8 @@
 package br.com.rfaengines.timedeferro_app.entity.caracteristica;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Setter
 @Getter

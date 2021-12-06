@@ -2,12 +2,16 @@ package br.com.rfaengines.timedeferro_app.entity.aventura;
 
 import br.com.rfaengines.timedeferro_app.entity.personagem.Antagonista;
 import br.com.rfaengines.timedeferro_app.entity.personagem.Heroi;
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
+@ToString
 @Setter
 @Getter
 @NoArgsConstructor
-public class Missao {
+public class Missao extends ElementoAventura{
     private int id_issao;
     private String data;
     private int level;

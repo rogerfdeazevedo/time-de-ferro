@@ -9,7 +9,6 @@ import lombok.ToString;
 @Setter
 @Getter
 @NoArgsConstructor
-public class Estrategia extends ElementoAventura {
-    private TipoEstrategia tipoEstrategia;
-    private int bonus;
+public class ElementoAventura {
+    private String descricao;
 }

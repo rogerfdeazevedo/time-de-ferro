@@ -4,7 +4,9 @@ import java.util.List;
 
 import br.com.rfaengines.timedeferro_app.entity.caracteristica.Habilidade;
 import br.com.rfaengines.timedeferro_app.entity.caracteristica.Tipo;
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Setter
 @Getter

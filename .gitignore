@@ -310,7 +310,7 @@ $RECYCLE.BIN/
 build/
 
 # Ignore Gradle GUI config
-gradle-app.setting
+gradle-appUtil.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
@@ -525,7 +525,7 @@ csx/
 ecf/
 rcf/
 
-# Windows Store app package directories and files
+# Windows Store appUtil package directories and files
 AppPackages/
 BundleArtifacts/
 Package.StoreAssociation.xml

@@ -95,7 +95,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 [header-url]: img/header-url.png
 [header-link]: #
 
-[repository-url]: https://github.com/rogerfdeazevedo/timedeferro-app
+[repository-url]: https://github.com/rogerfdeazevedo/timedeferro-appUtil
 
 [cloud-provider-url]: #
 
@@ -103,7 +103,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 [progresso-projeto-url]: img/progresso-projeto.png
 
-[wiki]: https://github.com/rogerfdeazevedo/timedeferro-app/wiki
+[wiki]: https://github.com/rogerfdeazevedo/timedeferro-appUtil/wiki
 
 [version-image]: https://img.shields.io/badge/Version-0.0.1-blue?style=for-the-badge&logo=appveyor
 [version-url]: https://img.shields.io/badge/version-0.0.1-blue

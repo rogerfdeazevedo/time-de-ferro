@@ -1,4 +1,4 @@
-package br.com.rfaengines.timedeferro_app.factory;
+package br.com.rfaengines.timedeferro_app.util;
 
 import java.util.Random;
 

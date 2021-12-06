@@ -1,25 +1,19 @@
 package br.com.rfaengines.timedeferro_app.factory;
 
-import static android.widget.Toast.LENGTH_SHORT;
-
-import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import br.com.rfaengines.timedeferro_app.R;
-import br.com.rfaengines.timedeferro_app.activity.TutorialActivity;
 import br.com.rfaengines.timedeferro_app.entity.aventura.Aventura;
 import br.com.rfaengines.timedeferro_app.entity.aventura.Cenario;
 import br.com.rfaengines.timedeferro_app.entity.aventura.Missao;
 import br.com.rfaengines.timedeferro_app.entity.aventura.Problema;
 import br.com.rfaengines.timedeferro_app.entity.caracteristica.Estilo;
 import br.com.rfaengines.timedeferro_app.entity.caracteristica.Habilidade;
-import br.com.rfaengines.timedeferro_app.entity.caracteristica.OrigemDoPoder;
 import br.com.rfaengines.timedeferro_app.entity.caracteristica.Tipo;
 import br.com.rfaengines.timedeferro_app.entity.personagem.Antagonista;
 import br.com.rfaengines.timedeferro_app.gameplay.Sistema;
+import br.com.rfaengines.timedeferro_app.util.Sortear;
 
 public class AventuraFactory {
 
@@ -31,42 +25,18 @@ public class AventuraFactory {
         return aventura;
     }
 
-    private static Missao novaMissao(int level, Cenario cenario, Problema problema
-    , Antagonista antagonista){
+    private static Missao novaMissao(int level){
         Missao missao = new Missao();
 //        missao.setId_issao();
 //        missao.setData();
         missao.setLevel(level);
-        missao.setCenario(cenario);
-        missao.setProblema(problema);
-        missao.setAntagonista(antagonista);
+        missao.setCenario((Cenario) new CenarioFactory().novo());
+        missao.setProblema(new Problema());
+        missao.setAntagonista(new Antagonista());
         return missao;
     }
 
-    private static Cenario novoCenario(){
-
-        List<String> param = new ArrayList<>();
-        param.add(String.valueOf(R.string.cenario_1));
-        param.add(String.valueOf(R.string.cenario_2));
-        param.add(String.valueOf(R.string.cenario_3));
-        param.add(String.valueOf(R.string.cenario_4));
-        param.add(String.valueOf(R.string.cenario_5));
-
-        int max = param.size();
-        int sort = Sortear.num(1,max);
-
-        Cenario cenario = new Cenario();
-        cenario.setDesc(param.get(sort));
-
-        max = OrigemDoPoder.values().length;
-        sort = Sortear.num(1,max);
-
-        cenario.setOrigemDoPoder(OrigemDoPoder.values()[sort]);
-
-        return cenario;
-    }
-
-    private static Problema novoProblema(){
+    public static Problema novoProblema(){
 
         List<String> param = new ArrayList<>();
         param.add(String.valueOf(R.string.problema_1));
@@ -79,7 +49,7 @@ public class AventuraFactory {
         int sort = Sortear.num(1,max);
 
         Problema problema = new Problema();
-        problema.setDesc(param.get(sort));
+        problema.setDescricao(param.get(sort));
 
         max = Estilo.values().length;
         sort = Sortear.num(1,max);
@@ -89,14 +59,14 @@ public class AventuraFactory {
         return problema;
     }
 
-    private static Antagonista novoAntagonista(){
+    public static Antagonista novoAntagonista(){
 
         List<String> strNome = new ArrayList<>();
-        strNome.add(String.valueOf(R.string.antagonista_1));
-        strNome.add(String.valueOf(R.string.antagonista_2));
-        strNome.add(String.valueOf(R.string.antagonista_3));
-        strNome.add(String.valueOf(R.string.antagonista_4));
-        strNome.add(String.valueOf(R.string.antagonista_5));
+        strNome.add(String.valueOf(R.string.antagonista_1_nome));
+        strNome.add(String.valueOf(R.string.antagonista_2_nome));
+        strNome.add(String.valueOf(R.string.antagonista_3_nome));
+        strNome.add(String.valueOf(R.string.antagonista_4_nome));
+        strNome.add(String.valueOf(R.string.antagonista_5_nome));
 
         int max = strNome.size();
         int sort = Sortear.num(1,max);
@@ -128,13 +98,10 @@ public class AventuraFactory {
         return antagonista;
     }
 
-    private static List<Missao> novaMissaoList(){
+    public static List<Missao> novaMissaoList(){
         List<Missao> missaoList = new ArrayList<>();
         for (int i=0; i<Sistema.LEVEL_MAXIMO; i++) {
-            missaoList.add(novaMissao(i,
-                    novoCenario(),
-                    novoProblema(),
-                    novoAntagonista()));
+            missaoList.add(novaMissao(i));
         }
         return missaoList;
     }

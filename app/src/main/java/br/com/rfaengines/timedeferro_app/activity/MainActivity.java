@@ -36,4 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btn_novo_jogo = findViewById(R.id.btn_novo_jogo_id);
     }
 
+    private void carregarUmObjetoComRecursosString(){
+
+    }
+
 }

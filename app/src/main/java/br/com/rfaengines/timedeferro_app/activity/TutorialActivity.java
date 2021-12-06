@@ -1,6 +1,6 @@
 package br.com.rfaengines.timedeferro_app.activity;
 
-import static android.widget.Toast.*;
+import static android.widget.Toast.LENGTH_SHORT;
 
 import android.os.Bundle;
 import android.view.View;

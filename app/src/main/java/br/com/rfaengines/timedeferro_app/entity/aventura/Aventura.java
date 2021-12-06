@@ -2,7 +2,9 @@ package br.com.rfaengines.timedeferro_app.entity.aventura;
 
 import java.util.List;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Setter
 @Getter
