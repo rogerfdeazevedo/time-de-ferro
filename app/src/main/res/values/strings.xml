@@ -9,4 +9,24 @@
     <string name="game_desc_history">Ei pessoa!? Preciso que me ajude a enviar os heróis mais adequados,
         para cada incidente na cidade. o novo chefão do crime do Bairro Proibido  - Lirou Diou - não economiza esforços pra tocar o terror nas pesssoas na cidade. </string>
     <string name="game_desc_tutorial">Observe bem os detalhes nas missões, e as caracterícias dos heróis. E escolha enviar o herói com os atributos mais adequados para cada situação.</string>
+    <string name="cenario_1">Banco Verde</string>
+    <string name="cenario_2">Postinho</string>
+    <string name="cenario_3">Bingo Clandestino</string>
+    <string name="cenario_4">Rinha de Galo</string>
+    <string name="cenario_5">Beco da Facada</string>
+    <string name="problema_1">Discussão Política</string>
+    <string name="problema_2">Sumiço de Isqueiro</string>
+    <string name="problema_3">Carteado Viciado</string>
+    <string name="problema_4">Galo Preto de Olhos Vermelhos</string>
+    <string name="problema_5">Conta na Pindura</string>
+    <string name="antagonista_1">Carlão, agiota que não mata</string>
+    <string name="antagonista_2">Luma Madeira, mulher com voz de homem</string>
+    <string name="antagonista_3">Toninho, bêbado tarado</string>
+    <string name="antagonista_4">Pingu Lin, cozinheiro asiático</string>
+    <string name="antagonista_5">Juninho, fanático político de apartamento</string>
+
+    <string name="antagonista_1_h1">Paulada na Molera</string>
+    <string name="antagonista_1_h2">Facada no bucho</string>
+    <string name="antagonista_1_esp">Vem que tem din-din</string>
+
 </resources>
