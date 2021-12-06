@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">timedeferro-app</string>
+    <string name="app_version">v.0.0.1</string>
+    <string name="new_game">Novo Jogo</string>
+    <string name="title_activity_tutorial">Introdução com Professor Artigo</string>
+    <style name="game_history">Ei pessoa!? Preciso que me ajude a enviar os heróis mais adequados, para cada incidente na cidade.
+        O novo chefão do crime do Bairro Proibido  - Lirou Diou - não economiza esforços pra tocar o terror nas pesssoas em Saranda City. </style>
+    <style name="game_tutorial">Observe bem os detalhes nas missões, e as caracterícias dos heróis. E escolha enviar o herói com os atributos mais adequados para cada situação.</style>
 </resources>

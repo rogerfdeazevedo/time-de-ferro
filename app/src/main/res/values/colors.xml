@@ -7,4 +7,26 @@
       <color name="teal_700">#FF018786</color>
       <color name="black">#FF000000</color>
       <color name="white">#FFFFFFFF</color>
+      <color name="purple_tints_1">#4d095c</color>
+      <color name="purple_tints_2">#5e216c</color>
+      <color name="purple_tints_3">#703a7c</color>
+      <color name="purple_tints_4">#82528c</color>
+      <color name="purple_tints_5">#946b9d</color>
+      <color name="purple_tints_6">#a684ad</color>
+      <color name="purple_tints_7">#b79cbd</color>
+      <color name="purple_tints_8">#c9b5ce</color>
+      <color name="purple_tints_9">#dbcdde</color>
+      <color name="purple_tints_10">#ede6ee</color>
+      <color name="red_tints_1">#DE2A2A</color>
+      <color name="red_tints_2">#E97171</color>
+      <color name="red_tints_3">#F0A0A0</color>
+      <color name="red_ref_1">#FE365B</color>
+      <color name="red_ref_2">#FE4265</color>
+      <color name="purple_ref_1">#BD33BC</color>
+      <color name="purple_ref_2">#9729EA</color>
+      <color name="purple_ref_3">#8A26FA</color>
+      <color name="purple_ref_4">#8625FF</color>
+      <color name="yealow_ref_1">#F9CF07</color>
+      <color name="yealow_ref_2">#FEB703</color>
+      <color name="yealow_ref_3">#FFB72F</color>
   </resources>
