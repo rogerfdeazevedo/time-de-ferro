@@ -1,5 +1,6 @@
-package br.com.rfaengines.timedeferro_app.entity.aventura;
+package br.com.rfaengines.timedeferro_app.dto.aventura;
 
+import br.com.rfaengines.timedeferro_app.dto.caracteristica.Estilo;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,6 +10,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @NoArgsConstructor
-public class ElementoAventura {
+public class ProblemaDTO {
+    private Estilo estilo;
     private String descricao;
 }

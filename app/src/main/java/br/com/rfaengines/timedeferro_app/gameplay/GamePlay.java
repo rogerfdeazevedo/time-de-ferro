@@ -1,8 +1,9 @@
 package br.com.rfaengines.timedeferro_app.gameplay;
 
-import br.com.rfaengines.timedeferro_app.entity.aventura.Aventura;
-import br.com.rfaengines.timedeferro_app.entity.participante.Computador;
-import br.com.rfaengines.timedeferro_app.entity.participante.Jogador;
+import java.util.List;
+
+import br.com.rfaengines.timedeferro_app.dto.personagem.AntagonistaDTO;
+import br.com.rfaengines.timedeferro_app.dto.personagem.HeroiDTO;
 import br.com.rfaengines.timedeferro_app.factory.AventuraFactory;
 import br.com.rfaengines.timedeferro_app.factory.ParticipanteFactory;
 
@@ -12,20 +13,48 @@ public class GamePlay {
     private Computador computador;
     private Aventura aventura;
 
-    public GamePlay(){}
+    private List<HeroiDTO> herois;
+    private List<String> cenarios;
+    private List<String> problemas;
+    private List<AntagonistaDTO> antagonistas;
 
-    public void start(){
-        iniciarParticipantes();
-        iniciarAventura();
+    private HeroiDTO heroiAtual;
+
+    private int levelAtual;
+
+    public GamePlay(List<HeroiDTO> herois, List<String> cenarios, List<String> problemas
+            , List<AntagonistaDTO> antagonistas){
+        this.herois = herois;
+        this.cenarios = cenarios;
+        this.problemas = problemas;
+        this.antagonistas = antagonistas;
+        this.levelAtual = Sistema.LEVEL_INICIAL;
     }
 
-    private void iniciarParticipantes() {
-        jogador = ParticipanteFactory.novoJogador();
-        computador = ParticipanteFactory.novoComputador();
+    public void iniciar(){
+        carregarParticipantes();
+        carregarAventura();
     }
 
-    private void iniciarAventura(){
-        aventura = AventuraFactory.novaAventura();
+    private void carregarParticipantes() {
+        this.jogador = ParticipanteFactory.novoJogador();
+        this.computador = ParticipanteFactory.novoComputador();
+    }
+
+    private void carregarAventura(){
+        AventuraFactory aventuraFactory
+                = new AventuraFactory(this.cenarios, this.problemas, this.antagonistas);
+        this.aventura = aventuraFactory.novaAventura();
+    }
+
+    public void selecionarHeroi(HeroiDTO heroiSelecionado){
+        this.heroiAtual = heroiSelecionado;
+    }
+
+    public void avancarProximoLevel(){
+        if(this.levelAtual<Sistema.LEVEL_MAXIMO){
+            this.levelAtual++;
+        }
     }
 
 }

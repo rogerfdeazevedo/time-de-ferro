@@ -1,4 +1,4 @@
-package br.com.rfaengines.timedeferro_app.entity.aventura;
+package br.com.rfaengines.timedeferro_app.dto.aventura;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +9,8 @@ import lombok.ToString;
 @Setter
 @Getter
 @NoArgsConstructor
-public class Estrategia extends ElementoAventura {
+public class EstrategiaDTO {
     private TipoEstrategia tipoEstrategia;
     private int bonus;
+    private String descricao;
 }

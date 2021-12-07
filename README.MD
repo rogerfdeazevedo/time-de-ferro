@@ -33,13 +33,13 @@ Este projeto deve apresentar o conteúdo apresentado em aula:
 
 **_Professor Artigo_** é um renomado “mestre-prático-teórico”, embasado na “literatura sagrada” da ciência e tecnologia. Ele é o mentor de um grupo de jovens heróis em treinamento, conhecidos como **_Time de Ferro_**.
 
-Ele precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problema na cidade de **_“Saranda City”_**. O novo chefão do crime do Bairro Proibido - **_Lirou Diou_** não economiza esforços para aterrorizar as pessoas na cidade.
+Ele precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problemaDTO na cidade de **_“Saranda City”_**. O novo chefão do crime do Bairro Proibido - **_Lirou Diou_** não economiza esforços para aterrorizar as pessoas na cidade.
 
 **Descrição da mecânica**
 
 Conformee os problemas e situações serão apresentados, o Jogador precisa escolher em uma lista um herói com as melhores habilidades para resolver aquela situação. 
 
-Existe uma probabilidade de sucesso de acordo com o herói escolhido, e demais escolhadas feitas pelo jogador.
+Existe uma probabilidade de sucesso de acordo com o herói escolhido, e demais escolhadas feitas pelo jogadorDTO.
 
 <br/>
 
