@@ -33,7 +33,7 @@ public class HistoriaActivity extends AppCompatActivity {
     }
 
     private void iniciarComponente_btn_avancar(){
-        btn_avancar = findViewById(R.id.btn_avancar_id);
+        btn_avancar = findViewById(R.id.btn_comecar_id);
     }
 
 }

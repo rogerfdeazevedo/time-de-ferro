@@ -49,18 +49,6 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ---
 
-## Progresso do Projeto
-
-<br>
-
-<!--![progresso-projeto][progresso-projeto-url]-->
-
-<br>
-
-> Em ordem de prioridade
-
-<br>
-
 ## Configuração de desenvolvimento
 
 É necessário ter um ambiente de desenvolvimento para Java e Android.  
@@ -76,9 +64,18 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
-
+* 0.0.2
+    * Carregamento de parametros de recursos String.xml
+      * Activity
+      * Factory 
+     
 * 0.0.1
     * Trabalho inicial
+    * Activity 
+      * Tela#01 - Menu Principal
+      * Activity Tela#02 - Introdução com Professor Artigo (Tutorial)
+        * Historia
+        * Tutorial
 
 ---
 

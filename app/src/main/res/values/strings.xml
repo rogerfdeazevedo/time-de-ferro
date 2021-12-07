@@ -11,91 +11,30 @@
     <string name="game_title_history">Saranda City</string>
     <string name="game_title_tutorial">Instruções do Jogo</string>
 
-    <string name="game_desc_history">Ei pessoa!? Preciso que me ajude a enviar os heróis mais adequados,
-        para cada incidente na cidade. o novo chefão do crime do Bairro Proibido  - Lirou Diou - não economiza
-        esforços pra tocar o terror nas pesssoas na cidade. </string>
-    <string name="game_desc_tutorial">Observe bem os detalhes nas missões, e as caracterícias dos heróis.
-        E escolha enviar o herói com os atributos mais adequados para cada situação.</string>
+    <string name="game_desc_history">Ei pessoa!? Preciso que me ajude a enviar os heróis mais adequados, para cada incidente na cidade. o novo chefão do crime do Bairro Proibido  - Lirou Diou - não economiza esforços pra tocar o terror nas pesssoas na cidade. </string>
+    <string name="game_desc_tutorial">Observe bem os detalhes nas missões, e as caracterícias dos heróis. E escolha enviar o herói com os atributos mais adequados para cada situação.</string>
+
+    <string-array name="cenarios">
+        <item>Banco Verde</item>
+        <item>Postinho</item>
+        <item>Bingo Clandestino</item>
+        <item>Rinha de Galo</item>
+        <item>Beco da Facada</item>
+    </string-array>
+
+    <string-array name="problemas">
+        <item>Discussão Política</item>
+        <item>Sumiço de Isqueiro</item>
+        <item>Carteado Viciado</item>
+        <item>Galo Preto de Olhos Vermelhos</item>
+        <item>Conta na Pindura</item>
+    </string-array>
 
     <string name="mentor_nome">Professor Artigo</string>
-    <string name="mentor_desc">É um renomado “mestre-prático-teórico”, embasado na “literatura sagrada”
-        da ciência e tecnologia. Ele é o mentor de um grupo de jovens heróis em treinamento,
-        conhecidos como Time de Ferro. Ele precisa escolher com cuidado, quais heróis são mais adequados
-        para resolver cada missão e novo problemaDTO na cidade de “Saranda City”. O novo chefão do crime do
-        Bairro Proibido - Lirou Diou não economiza esforços para aterrorizar as pessoas na cidade.</string>
+    <string name="mentor_desc">É um renomado “mestre-prático-teórico”, embasado na “literatura sagrada” da ciência e tecnologia. Ele é o mentor de um grupo de jovens heróis em treinamento, conhecidos como Time de Ferro. Ele precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problemaDTO na cidade de “Saranda City”. O novo chefão do crime do Bairro Proibido - Lirou Diou não economiza esforços para aterrorizar as pessoas na cidade.</string>
 
     <string name="vilao_nome">Lirou Diou, Pintier Raivoso</string>
-    <string name="vilao_desc">O novo chefão do crime do “Bairro Proibido”, durante algum tempo foi um simples e bom funcionário.
-        Mas, sofria de uma rara condição que o deixava agitado quando era contrariado. Após grandes eventos em “Saranda City”,
-        ele aproveitou o vácuo de poder para tomar o controle do submundo do crime no “Beco da Facada”. Isso afetou muito a ordem
-        natural na região, e por isso os meliantes estão mais atrevidos do que nunca.</string>
-
-    <string name="heroi_1_nome">Motoqueiro Metal</string>
-    <string name="heroi_1_desc">Negociou sua alma com os antigos espíritos do metal, em troca de poderes.
-        Pârpou precisa viver como um pagodeiro, exceto quando invoca seus poderes e se transforma em um vigilante mascarado.</string>
-    <string name="heroi_1_origem_poder">Sobrenatural</string>
-    <string name="heroi_1_estilo">Lutador</string>
-    <string name="heroi_1_tipo">Tesoura</string>
-    <string name="heroi_1_frase">“E ai Broo!”</string>
-    <string name="heroi_1_h1">Corrente Fatal</string>
-    <string name="heroi_1_h2">Fogo Roxo</string>
-    <string name="heroi_1_esp">Caveira Metal</string>
-
-    <string name="heroi_2_nome">Homem-Jaguatirica</string>
-    <string name="heroi_2_desc">Crítico de restaurante “amador-profissional” no seu tempo livre, sempre à
-        procura de novos pratos e novos sabores típicos. Gosta muito do Macarrão com almôndegas e Pizza Portuguesa.</string>
-    <string name="heroi_2_origem_poder">Sobrenatural</string>
-    <string name="heroi_2_estilo">Lutador</string>
-    <string name="heroi_2_tipo">Papel</string>
-    <string name="heroi_2_frase">“Eh us guri pai!”</string>
-    <string name="heroi_2_h1">Pulo do Felino</string>
-    <string name="heroi_2_h2">Rugido da Onça</string>
-    <string name="heroi_2_esp">Garra Pintada</string>
-
-    <string name="heroi_3_nome">Mister Bolerinho</string>
-    <string name="heroi_3_desc">Administra a Casa de Banhos Holandês Voador e também é conhecido como
-        vigilante mascarado aposentado, mas está de volta à ativa.</string>
-    <string name="heroi_3_origem_poder">Natural</string>
-    <string name="heroi_3_estilo">Suporte</string>
-    <string name="heroi_3_tipo">Pedra</string>
-    <string name="heroi_3_frase">“Os guri tão tudo loko”</string>
-    <string name="heroi_3_h1">Bolero Voador</string>
-    <string name="heroi_3_h2">Toalha Molhada</string>
-    <string name="heroi_3_esp">Tome-lhe coxa, tome-lhe coxa</string>
-
-    <string name="heroi_4_nome">Escoteiro Mustache</string>
-    <string name="heroi_4_desc">Mestre dos disfarces, voz de veludo, as vezes oculto na multidão.
-        Um vigilante solitário, mas que também luta contra o crime.</string>
-    <string name="heroi_4_origem_poder">Mutante</string>
-    <string name="heroi_4_estilo">Controle</string>
-    <string name="heroi_4_tipo">Tesoura</string>
-    <string name="heroi_4_frase">“Fala Lindinho!”</string>
-    <string name="heroi_4_h1">Nó de escoteiro</string>
-    <string name="heroi_4_h2">Mustache vivo</string>
-    <string name="heroi_4_esp">Relógio de pau</string>
-
-    <string name="heroi_5_nome">DJ Golfinho</string>
-    <string name="heroi_5_desc">As vezes participa de corridas de carros proibidas, e nas horas
-        vagas é chamado em festas para “discotecar” (ele só aperta o play, mas tudo bem).</string>
-    <string name="heroi_5_origem_poder">Ciência</string>
-    <string name="heroi_5_estilo">Controle</string>
-    <string name="heroi_5_tipo">Pedra</string>
-    <string name="heroi_5_frase">“Meu chapéu!”</string>
-    <string name="heroi_5_h1">Beijo do Golfinho</string>
-    <string name="heroi_5_h2">Canto Aquático</string>
-    <string name="heroi_5_esp">Mamífero Assanhado</string>
-
-    <string name="cenario_1">Banco Verde</string>
-    <string name="cenario_2">Postinho</string>
-    <string name="cenario_3">Bingo Clandestino</string>
-    <string name="cenario_4">Rinha de Galo</string>
-    <string name="cenario_5">Beco da Facada</string>
-
-    <string name="problema_1">Discussão Política</string>
-    <string name="problema_2">Sumiço de Isqueiro</string>
-    <string name="problema_3">Carteado Viciado</string>
-    <string name="problema_4">Galo Preto de Olhos Vermelhos</string>
-    <string name="problema_5">Conta na Pindura</string>
+    <string name="vilao_desc">O novo chefão do crime do “Bairro Proibido”, durante algum tempo foi um simples e bom funcionário. Mas, sofria de uma rara condição que o deixava agitado quando era contrariado. Após grandes eventos em “Saranda City”, ele aproveitou o vácuo de poder para tomar o controle do submundo do crime no “Beco da Facada”. Isso afetou muito a ordem natural na região, e por isso os meliantes estão mais atrevidos do que nunca.</string>
 
     <string name="antagonista_1_nome">Carlão, agiota que não mata</string>
     <string name="antagonista_1_h1">Paulada na Molera</string>
@@ -121,5 +60,56 @@
     <string name="antagonista_5_h1">Meu herói</string>
     <string name="antagonista_5_h2">Cientista político</string>
     <string name="antagonista_5_esp">Eles querem nos matar</string>
+
+    <string name="heroi_1_nome">Motoqueiro Metal</string>
+    <string name="heroi_1_desc">Negociou sua alma com os antigos espíritos do metal, em troca de poderes. Pârpou precisa viver como um pagodeiro, exceto quando invoca seus poderes e se transforma em um vigilante mascarado.</string>
+    <string name="heroi_1_origem_poder">Sobrenatural</string>
+    <string name="heroi_1_estilo">Lutador</string>
+    <string name="heroi_1_tipo">Tesoura</string>
+    <string name="heroi_1_frase">“E ai Broo!”</string>
+    <string name="heroi_1_h1">Corrente Fatal</string>
+    <string name="heroi_1_h2">Fogo Roxo</string>
+    <string name="heroi_1_esp">Caveira Metal</string>
+
+    <string name="heroi_2_nome">Homem-Jaguatirica</string>
+    <string name="heroi_2_desc">Crítico de restaurante “amador-profissional” no seu tempo livre, sempre à procura de novos pratos e novos sabores típicos. Gosta muito do Macarrão com almôndegas e Pizza Portuguesa.</string>
+    <string name="heroi_2_origem_poder">Sobrenatural</string>
+    <string name="heroi_2_estilo">Lutador</string>
+    <string name="heroi_2_tipo">Papel</string>
+    <string name="heroi_2_frase">“Eh us guri pai!”</string>
+    <string name="heroi_2_h1">Pulo do Felino</string>
+    <string name="heroi_2_h2">Rugido da Onça</string>
+    <string name="heroi_2_esp">Garra Pintada</string>
+
+    <string name="heroi_3_nome">Mister Bolerinho</string>
+    <string name="heroi_3_desc">Administra a Casa de Banhos Holandês Voador e também é conhecido como vigilante mascarado aposentado, mas está de volta à ativa.</string>
+    <string name="heroi_3_origem_poder">Natural</string>
+    <string name="heroi_3_estilo">Suporte</string>
+    <string name="heroi_3_tipo">Pedra</string>
+    <string name="heroi_3_frase">“Os guri tão tudo loko”</string>
+    <string name="heroi_3_h1">Bolero Voador</string>
+    <string name="heroi_3_h2">Toalha Molhada</string>
+    <string name="heroi_3_esp">Tome-lhe coxa, tome-lhe coxa</string>
+
+    <string name="heroi_4_nome">Escoteiro Mustache</string>
+    <string name="heroi_4_desc">Mestre dos disfarces, voz de veludo, as vezes oculto na multidão. Um vigilante solitário, mas que também luta contra o crime.</string>
+    <string name="heroi_4_origem_poder">Mutante</string>
+    <string name="heroi_4_estilo">Controle</string>
+    <string name="heroi_4_tipo">Tesoura</string>
+    <string name="heroi_4_frase">“Fala Lindinho!”</string>
+    <string name="heroi_4_h1">Nó de escoteiro</string>
+    <string name="heroi_4_h2">Mustache vivo</string>
+    <string name="heroi_4_esp">Relógio de pau</string>
+
+    <string name="heroi_5_nome">DJ Golfinho</string>
+    <string name="heroi_5_desc">As vezes participa de corridas de carros proibidas, e nas horas vagas é chamado em festas para “discotecar” (ele só aperta o play, mas tudo bem).</string>
+    <string name="heroi_5_origem_poder">Ciência</string>
+    <string name="heroi_5_estilo">Controle</string>
+    <string name="heroi_5_tipo">Pedra</string>
+    <string name="heroi_5_frase">“Meu chapéu!”</string>
+    <string name="heroi_5_h1">Beijo do Golfinho</string>
+    <string name="heroi_5_h2">Canto Aquático</string>
+    <string name="heroi_5_esp">Mamífero Assanhado</string>
+
 
 </resources>

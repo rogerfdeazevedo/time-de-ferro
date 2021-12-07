@@ -7,7 +7,7 @@ import br.com.rfaengines.timedeferro_app.dto.personagem.HeroiDTO;
 import br.com.rfaengines.timedeferro_app.factory.AventuraFactory;
 import br.com.rfaengines.timedeferro_app.factory.ParticipanteFactory;
 
-public class GamePlay {
+public class NewGame {
 
     private Jogador jogador;
     private Computador computador;
@@ -22,7 +22,7 @@ public class GamePlay {
 
     private int levelAtual;
 
-    public GamePlay(List<HeroiDTO> herois, List<String> cenarios, List<String> problemas
+    public NewGame(List<HeroiDTO> herois, List<String> cenarios, List<String> problemas
             , List<AntagonistaDTO> antagonistas){
         this.herois = herois;
         this.cenarios = cenarios;
