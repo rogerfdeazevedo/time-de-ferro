@@ -56,14 +56,14 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 * Android JDK Versão igual ou superior a 11
 * [Gradle](https://gradle.org/) - Versão igual ou superior 7.0.3
 
-## Executando os testes
-
-* [TestNG](https://testng.org/doc/) - Versão igual ou superior 6.14.2
 
 ---
 
 ## Release History
 
+* 0.0.4
+  * Tela#03 - Mapa da Cidade (Seleção de Missão)
+    * Add icones das missoes
 * 0.0.3
   * Tela#01 - Menu Principal
     * Adicionado novo logo

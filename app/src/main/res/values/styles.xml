@@ -52,6 +52,11 @@
         <item name="android:layout_marginTop">40dp</item>
     </style>
 
+    <style name="ImgLevelPoint">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
     <style name="Buttom">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
