@@ -1,16 +1,15 @@
 package br.com.rfaengines.timedeferro_app.activity;
 
-import static android.widget.Toast.LENGTH_SHORT;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
 import br.com.rfaengines.timedeferro_app.R;
 import br.com.rfaengines.timedeferro_app.dto.caracteristica.Estilo;
@@ -19,7 +18,10 @@ import br.com.rfaengines.timedeferro_app.dto.caracteristica.OrigemDoPoder;
 import br.com.rfaengines.timedeferro_app.dto.caracteristica.Tipo;
 import br.com.rfaengines.timedeferro_app.dto.personagem.AntagonistaDTO;
 import br.com.rfaengines.timedeferro_app.dto.personagem.HeroiDTO;
+import br.com.rfaengines.timedeferro_app.gameplay.GamePlay;
+import lombok.extern.java.Log;
 
+@Log
 public class TutorialActivity extends AppCompatActivity {
 
     private Button btn_comecar;
@@ -33,34 +35,45 @@ public class TutorialActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
-
         getSupportActionBar().hide();
-        iniciarComponente_btn_avancar();
+
+        btn_comecar = findViewById(R.id.btn_comecar);
 
         btn_comecar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             Toast.makeText(TutorialActivity.this, "Ainda não está pronto!", LENGTH_SHORT).show();
+                Intent intent = new Intent(TutorialActivity.this, MapaDaCidadeActivity.class);
+                startActivity(intent);
             }
         });
 
     }
 
-    private void iniciarComponente_btn_avancar(){
-        btn_comecar = findViewById(R.id.btn_comecar_id);
-    }
+    /**
+     * NOVO JOGO - INICIO
+     * obs.: Para depois, refatorar pq eu acho que fiz tudo do jeito mais dificl
+     * demorei muito pra começar a codificar
+     * **/
+
+     private void novoJogo(){
+         carregarParametros();
+         GamePlay gamePlay = new GamePlay(herois, cenarios, problemas, antagonistas);
+         gamePlay.iniciar();
+     }
 
     /**
-     * Inicio parametros string
+     * CARREGAR PARAMETROS STRINGS
      * obs.: Para depois, refatorar pq eu acho que fiz tudo do jeito mais dificl
      * demorei muito pra começar a codificar
      * **/
 
     private void carregarParametros(){
+        log.log(Level.OFF,"-- CARREGAR PARAMETROS STRINGS - INICIO --");
         carregarCenarios();
         carregarProblemas();
         carregarAntagonistas();
         carregarHerois();
+        log.log(Level.OFF,"-- CARREGAR PARAMETROS STRINGS - FIM ------");
     }
 
     private void carregarCenarios(){

@@ -1,7 +1,5 @@
 package br.com.rfaengines.timedeferro_app.factory;
 
-import br.com.rfaengines.timedeferro_app.dto.participante.ComputadorDTO;
-import br.com.rfaengines.timedeferro_app.dto.participante.JogadorDTO;
 import br.com.rfaengines.timedeferro_app.gameplay.Computador;
 import br.com.rfaengines.timedeferro_app.gameplay.Jogador;
 import br.com.rfaengines.timedeferro_app.gameplay.Sistema;

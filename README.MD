@@ -64,6 +64,10 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.0.3
+  * Tela#01 - Menu Principal
+    * Adicionado novo logo
+  * Tela#03 - Mapa da Cidade (Seleção de Missão)
 * 0.0.2
     * Carregamento de parametros de recursos String.xml
       * Activity

@@ -17,9 +17,9 @@ public class HistoriaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historia);
-
         getSupportActionBar().hide();
-        iniciarComponente_btn_avancar();
+
+        btn_avancar = findViewById(R.id.btn_Avancar);
 
         btn_avancar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,10 +30,6 @@ public class HistoriaActivity extends AppCompatActivity {
         });
 
 
-    }
-
-    private void iniciarComponente_btn_avancar(){
-        btn_avancar = findViewById(R.id.btn_comecar_id);
     }
 
 }

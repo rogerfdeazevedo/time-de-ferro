@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppVersion">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:padding">8dp</item>
-    </style>
-
     <style name="ContainerTitle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
@@ -27,7 +20,7 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="TextTelaDois">
+    <style name="TextViewGameDesc">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">40dp</item>
@@ -46,11 +39,17 @@
         <item name="android:background">@drawable/container_components</item>
     </style>
 
-    <style name="ContainerImgCena">
+    <style name="ContainerCena">
         <item name="android:layout_width">310dp</item>
         <item name="android:layout_height">217dp</item>
         <item name="android:layout_marginTop">31dp</item>
-        <item name="android:background">@drawable/container_img_cena</item>
+        <item name="android:background">@drawable/container_border</item>
+    </style>
+
+    <style name="ImgCena">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginTop">40dp</item>
     </style>
 
     <style name="Buttom">
@@ -66,5 +65,11 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/buttom</item>
     </style>
+
+    <style name="ImgCityBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">580dp</item>
+        <item name="android:layout_marginTop">70dp</item>
+     </style>
 
 </resources>

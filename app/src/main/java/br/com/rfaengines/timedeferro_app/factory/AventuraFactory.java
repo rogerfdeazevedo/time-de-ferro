@@ -3,7 +3,6 @@ package br.com.rfaengines.timedeferro_app.factory;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.rfaengines.timedeferro_app.dto.aventura.AventuraDTO;
 import br.com.rfaengines.timedeferro_app.dto.aventura.MissaoDTO;
 import br.com.rfaengines.timedeferro_app.dto.personagem.AntagonistaDTO;
 import br.com.rfaengines.timedeferro_app.gameplay.Aventura;
