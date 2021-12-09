@@ -3,14 +3,20 @@
     <string name="app_name">TimeDeFerro</string>
     <string name="app_version">v.0.0.1</string>
 
-    <string name="btn_new_game">Novo Jogo</string>
-    <string name="btn_next">Avançar</string>
-    <string name="btn_start">Começar</string>
-
     <string name="title_activity_tutorial">Introdução com Professor Artigo</string>
     <string name="title_activity_mapa_da_cidade">Tretas em Saranda City</string>
 
     <string name="game_continue">Continues: </string>
+    <string name="game_resumo_da_treta">Resumo da Treta</string>
+    <string name="game_cenario">Lugar: </string>
+    <string name="game_problema">Treta: </string>
+    <string name="game_antagonista">Meliante</string>
+    <string name="game_habilidades_title">Habilidades</string>
+    <string name="game_habilidade_1">Habilidade 1</string>
+    <string name="game_habilidade_2">Habilidade 2</string>
+    <string name="game_especial_title">Especial</string>
+    <string name="game_especial">Especial</string>
+
 
     <string name="game_title_history">Saranda City</string>
     <string name="game_title_tutorial">Instruções do Jogo</string>
@@ -19,6 +25,10 @@
     <string name="game_desc_tutorial">Observe bem os detalhes nas missões, e as caracterícias dos heróis. E escolha enviar o herói com os atributos mais adequados para cada situação.</string>
     <string name="game_desc_level">Clique no Lugar indicado para ver qual Treta está rolando ...</string>
 
+    <string name="btn_new_game">Novo Jogo</string>
+    <string name="btn_next">Avançar</string>
+    <string name="btn_start">Começar</string>
+    <string name="btn_day_hero">Herói do Dia</string>
 
     <string-array name="cenarios">
         <item>Banco Verde</item>

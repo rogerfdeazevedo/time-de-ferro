@@ -53,6 +53,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 <br/>
 
+* Padrões profissionais
 * Framework/Engine Game X Android Nativo; 
 
 <br/>
@@ -63,7 +64,9 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 <br/>
 
-* Tamanho do projeto X Planejamento X Tempo;
+* Empolgação X Tamanho do projeto
+* Planejamento X Tempo;
+* Tarefas X Foco
 * Android Layouts
 * Atualizações X Git Flow
 
@@ -83,6 +86,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.0.6 - Layout - Tela#04 - Resumo da Treta (Descriçao da Missão) 
 * 0.0.5 - Revisão geral de layout
 * 0.0.4
   * Tela#03 - Mapa da Cidade (Seleção de Missão)
