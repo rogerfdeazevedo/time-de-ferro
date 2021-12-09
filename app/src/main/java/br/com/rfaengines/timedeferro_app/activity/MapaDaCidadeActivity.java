@@ -2,6 +2,7 @@ package br.com.rfaengines.timedeferro_app.activity;
 
 import static android.widget.Toast.LENGTH_SHORT;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -24,12 +25,11 @@ public class MapaDaCidadeActivity extends AppCompatActivity {
         imgView_Lvl1 = findViewById(R.id.imgView_Lvl1);
 
         imgView_Lvl1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Intent intent = new Intent(MapaDaCidadeActivity.this, ResumoDaTretaActivity.class);
-                //startActivity(intent);
-                Toast.makeText(MapaDaCidadeActivity.this, "Quase pronto!", LENGTH_SHORT).show();
-            }
+        @Override
+        public void onClick(View view) {
+                Intent intent = new Intent(MapaDaCidadeActivity.this, ResumoDaTretaActivity.class);
+                startActivity(intent);
+         }
         });
     }
 

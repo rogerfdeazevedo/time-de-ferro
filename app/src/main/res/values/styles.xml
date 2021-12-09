@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ContainerTitle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:background">@drawable/container_title</item>
-        <item name="android:layout_marginTop">30dp</item>
-        <item name="android:layout_marginRight">40dp</item>
-    </style>
-
     <style name="Title">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginTop">30dp</item>
         <item name="android:layout_marginRight">40dp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">17sp</item>
@@ -20,61 +12,105 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="TextViewGameDesc">
+
+    <style name="ContainerTitle">
+        <item name="android:background">@drawable/container_title</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
         <item name="android:layout_marginRight">40dp</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textAlignment">inherit</item>
     </style>
 
     <style name="ContainerComponents">
+        <item name="android:background">@drawable/container_components</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">250dp</item>
-        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
         <item name="android:titleMarginBottom">50dp</item>
-        <item name="android:background">@drawable/container_components</item>
+        <item name="android:layout_marginBottom">40dp</item>
     </style>
 
-    <style name="ContainerCena">
+    <style name="ContainerCenaBorder">
+        <item name="android:background">@drawable/container_border</item>
         <item name="android:layout_width">310dp</item>
         <item name="android:layout_height">217dp</item>
-        <item name="android:layout_marginTop">31dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="ContainerCityBackgroundBorder">
         <item name="android:background">@drawable/container_border</item>
+        <item name="android:layout_width">370dp</item>
+        <item name="android:layout_height">600dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+    </style>
+
+    <style name="Buttom">
+        <item name="android:background">@drawable/buttom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextViewGameTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">inherit</item>
+    </style>
+
+    <style name="TextViewGameDesc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">inherit</item>
     </style>
 
     <style name="ImgCena">
         <item name="android:layout_width">300dp</item>
         <item name="android:layout_height">200dp</item>
-        <item name="android:layout_marginTop">40dp</item>
+        <!--<item name="android:layout_marginTop">40dp</item>-->
+        <!--<item name="android:layout_marginBottom">350dp</item>-->
+    </style>
+
+    <style name="ImgCityBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">580dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+     </style>
+
+    <style name="ImgCityMap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">320dp</item>
     </style>
 
     <style name="ImgLevelPoint">
         <item name="android:layout_width">80dp</item>
         <item name="android:layout_height">80dp</item>
     </style>
-
-    <style name="Buttom">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">40dp</item>
-        <item name="android:layout_marginRight">40dp</item>
-        <item name="android:layout_marginTop">15dp</item>
-        <item name="android:padding">20dp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:background">@drawable/buttom</item>
-    </style>
-
-    <style name="ImgCityBackground">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">580dp</item>
-        <item name="android:layout_marginTop">70dp</item>
-     </style>
 
 </resources>

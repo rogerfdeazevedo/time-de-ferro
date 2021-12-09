@@ -19,7 +19,8 @@
             style="@style/ContainerTitle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
         <TextView
             android:id="@+id/txtView_title"
@@ -31,55 +32,55 @@
 
         <View
             android:id="@+id/view_ContainerImgCena"
-            style="@style/ContainerCena"
+            style="@style/ContainerCenaBorder"
             app:layout_constraintTop_toBottomOf="@+id/txtView_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/view_containerComponents"/>
 
         <ImageView
-            android:id="@+id/imgView_CityBackground"
+            android:id="@+id/imgView_CenaEscritorio"
             android:src="@drawable/img_escritorio"
             style="@style/ImgCena"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_title" />
+            app:layout_constraintTop_toTopOf="@+id/view_ContainerImgCena"
+            app:layout_constraintStart_toStartOf="@+id/view_ContainerImgCena"
+            app:layout_constraintEnd_toEndOf="@+id/view_ContainerImgCena"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerImgCena"/>
 
         <View
             android:id="@+id/view_containerComponents"
             style="@style/ContainerComponents"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_CityBackground"
+            app:layout_constraintTop_toBottomOf="@+id/view_ContainerImgCena"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
             android:id="@+id/txtView_gameTitle"
-            style="@style/TextViewGameDesc"
-            android:layout_marginTop="60dp"
+            style="@style/TextViewGameTitle"
             android:text="@string/game_title_tutorial"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_CityBackground"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/view_containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/view_containerComponents"
+            app:layout_constraintEnd_toEndOf="@+id/view_containerComponents"
+            app:layout_constraintBottom_toTopOf="@id/txtView_gameDesc"/>
 
         <TextView
             android:id="@+id/txtView_gameDesc"
             style="@style/TextViewGameDesc"
-            android:layout_marginTop="10dp"
             android:text="@string/game_desc_tutorial"
-            android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@+id/txtView_gameTitle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"  />
+            app:layout_constraintStart_toStartOf="@+id/view_containerComponents"
+            app:layout_constraintEnd_toEndOf="@+id/view_containerComponents"
+            app:layout_constraintBottom_toBottomOf="@+id/view_containerComponents"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_comecar"
             style="@style/Buttom"
-            android:text="@string/btn_start"
+            android:text="@string/btn_new_game"
             app:layout_constraintTop_toBottomOf="@+id/view_containerComponents"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

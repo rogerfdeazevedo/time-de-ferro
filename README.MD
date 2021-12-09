@@ -49,6 +49,28 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ---
 
+## Desafios
+
+<br/>
+
+* Framework/Engine Game X Android Nativo; 
+
+<br/>
+
+---
+
+## Lições aprendidas
+
+<br/>
+
+* Tamanho do projeto X Planejamento X Tempo;
+* Android Layouts
+* Atualizações X Git Flow
+
+<br/>
+
+---
+
 ## Configuração de desenvolvimento
 
 É necessário ter um ambiente de desenvolvimento para Java e Android.  
@@ -61,6 +83,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.0.5 - Revisão geral de layout
 * 0.0.4
   * Tela#03 - Mapa da Cidade (Seleção de Missão)
     * Add icones das missoes

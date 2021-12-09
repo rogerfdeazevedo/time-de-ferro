@@ -10,6 +10,8 @@
     <string name="title_activity_tutorial">Introdução com Professor Artigo</string>
     <string name="title_activity_mapa_da_cidade">Tretas em Saranda City</string>
 
+    <string name="game_continue">Continues: </string>
+
     <string name="game_title_history">Saranda City</string>
     <string name="game_title_tutorial">Instruções do Jogo</string>
 
