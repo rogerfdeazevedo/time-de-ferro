@@ -74,6 +74,18 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ---
 
+## Próximos passos
+
+<br/>
+
+* Concluír o projeto com as idéias originais, paramelhorar conhecimento de android nativo
+* Melhorias de animações e transições de tela
+* Refazer o jogo com o Framwork/Engine mais adequada
+
+<br/>
+
+---
+
 ## Configuração de desenvolvimento
 
 É necessário ter um ambiente de desenvolvimento para Java e Android.  
@@ -86,6 +98,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.0.7 - Layout - Tela#05 - Herói do Dia (Seleção de Herói)
 * 0.0.6 - Layout - Tela#04 - Resumo da Treta (Descriçao da Missão) 
 * 0.0.5 - Revisão geral de layout
 * 0.0.4

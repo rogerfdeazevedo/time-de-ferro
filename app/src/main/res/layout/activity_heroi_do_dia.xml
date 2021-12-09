@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".activity.TutorialActivity">
+
+        <View
+            android:id="@+id/view_containerTitle"
+            style="@style/ContainerTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtView_title"
+            style="@style/Title"
+            android:text="@string/title_activity_mapa_da_cidade"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view_ContainerBorder"
+            style="@style/ContainerCityBackgroundBorder"
+            app:layout_constraintTop_toBottomOf="@+id/txtView_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgView_CityBackground"
+            android:src="@drawable/img_city_background"
+            style="@style/ImgCityBackground"
+            app:layout_constraintTop_toTopOf="@+id/view_ContainerBorder"
+            app:layout_constraintStart_toStartOf="@+id/view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder" />
+
+        <ImageView
+            android:id="@+id/imgView_cityMap"
+            android:src="@drawable/img_city_map"
+            style="@style/ImgCityMap"
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+
+        <View
+            android:id="@+id/view_containerHeroiDoDiaTitle"
+            android:background="@drawable/container_components"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="600dp"
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+
+        <TextView
+            android:id="@+id/txtView_resumoDaTretaTitle"
+            style="@style/TextViewGameTitle"
+            android:text="@string/game_heroi_do_dia"
+            app:layout_constraintTop_toTopOf="@id/view_containerHeroiDoDiaTitle"
+            app:layout_constraintStart_toStartOf="@id/view_containerHeroiDoDiaTitle"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroiDoDiaTitle"
+            app:layout_constraintBottom_toBottomOf="@id/view_containerHeroiDoDiaTitle" />
+
+
+        <View
+            android:id="@+id/view_containerTretaStatus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="500dp"
+            android:background="@drawable/container_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
+            app:layout_constraintVertical_bias="0.538" />
+
+        <TextView
+            android:id="@+id/txtView_PlayerStatus"
+            style="@style/TextViewPlayerStatus"
+            android:text="@string/game_continue"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintTop_toTopOf="@id/view_containerTretaStatus"
+            app:layout_constraintStart_toStartOf="@id/view_containerTretaStatus"
+            app:layout_constraintEnd_toStartOf="@id/txtView_CenarioTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_containerTretaStatus"/>
+
+        <TextView
+            android:id="@+id/txtView_CenarioTreta"
+            style="@style/TextViewPlayerStatus"
+            android:text="@string/game_cenario"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/view_containerTretaStatus"
+            app:layout_constraintStart_toEndOf="@id/txtView_PlayerStatus"
+            app:layout_constraintEnd_toStartOf="@id/txtView_ProblemaTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_containerTretaStatus"/>
+
+        <TextView
+            android:id="@+id/txtView_ProblemaTreta"
+            style="@style/TextViewPlayerStatus"
+            android:text="@string/game_problema"
+            app:layout_constraintTop_toTopOf="@id/view_containerTretaStatus"
+            app:layout_constraintStart_toEndOf="@id/txtView_CenarioTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_containerTretaStatus"
+            app:layout_constraintBottom_toBottomOf="@+id/view_containerTretaStatus"/>
+
+        <View
+            android:id="@+id/view_containerAntagonista"
+            android:background="@drawable/container_components"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="210dp"
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+
+        <ImageView
+            android:id="@+id/imgView_Antagonista"
+            android:src="@drawable/img_char_silhuete_a"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="300dp"
+            app:layout_constraintTop_toTopOf="@id/view_containerAntagonista"
+            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
+            app:layout_constraintEnd_toEndOf="@id/view_containerAntagonista"
+            app:layout_constraintBottom_toBottomOf="@+id/view_containerAntagonista"/>
+
+        <TextView
+            android:id="@+id/txtView_AntagonistaTipo"
+            style="@style/TextViewGameTitle"
+            android:text="@string/game_antagonista"
+            app:layout_constraintTop_toTopOf="@id/view_containerAntagonista"
+            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
+            app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaHabilidades" />
+
+        <TextView
+            android:id="@+id/txtView_AntagonistaHabilidades"
+            style="@style/TextViewGameTitle"
+            android:text="@string/game_habilidades_title"
+            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaTipo"
+            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
+            app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaHabilidade_1" />
+
+        <TextView
+            android:id="@+id/txtView_AntagonistaHabilidade_1"
+            style="@style/TextViewGameDesc"
+            android:text="@string/game_habilidade_1"
+            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaHabilidades"
+            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
+            app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaHabilidade_2" />
+
+        <TextView
+            android:id="@+id/txtView_AntagonistaHabilidade_2"
+            style="@style/TextViewGameDesc"
+            android:text="@string/game_habilidade_2"
+            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaHabilidade_1"
+            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
+            app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaEspecialTitle" />
+
+        <TextView
+            android:id="@+id/txtView_AntagonistaEspecialTitle"
+            style="@style/TextViewGameTitle"
+            android:text="@string/game_especial_title"
+            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaHabilidade_2"
+            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
+            app:layout_constraintBottom_toBottomOf="@id/txtView_AntagonistaEspecial" />
+
+        <TextView
+            android:id="@+id/txtView_AntagonistaEspecial"
+            style="@style/TextViewGameDesc"
+            android:text="@string/game_especial_title"
+            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaEspecialTitle"
+            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
+            app:layout_constraintBottom_toBottomOf="@id/view_containerAntagonista" />
+
+        <View
+            android:id="@+id/view_containerHeroi"
+            android:background="@drawable/container_components"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintTop_toBottomOf="@id/view_containerAntagonista"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+
+        <ImageView
+            android:id="@+id/imgView_Heroi"
+            android:src="@drawable/img_char_silhuete_b"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="300dp"
+            app:layout_constraintTop_toTopOf="@id/view_containerHeroi"
+            app:layout_constraintStart_toStartOf="@id/view_containerHeroi"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroi"
+            app:layout_constraintBottom_toBottomOf="@+id/view_containerHeroi"/>
+
+        <TextView
+            android:id="@+id/txtView_HeroiTipo"
+            style="@style/TextViewGameTitle"
+            android:text="@string/game_heroi"
+            android:layout_marginLeft="140dp"
+            app:layout_constraintTop_toTopOf="@id/view_containerHeroi"
+            app:layout_constraintStart_toEndOf="@id/imgView_Heroi"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroi"
+            app:layout_constraintBottom_toTopOf="@+id/txtView_HeroiHabilidades" />
+
+        <TextView
+            android:id="@+id/txtView_HeroiHabilidades"
+            style="@style/TextViewGameTitle"
+            android:layout_marginLeft="140dp"
+            android:text="@string/game_habilidades_title"
+            app:layout_constraintTop_toBottomOf="@+id/txtView_HeroiTipo"
+            app:layout_constraintStart_toEndOf="@id/imgView_Heroi"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroi"
+            app:layout_constraintBottom_toTopOf="@id/txtView_HeroiHabilidade_1" />
+
+        <TextView
+            android:id="@+id/txtView_HeroiHabilidade_1"
+            style="@style/TextViewGameDesc"
+            android:layout_marginLeft="140dp"
+            android:text="@string/game_habilidade_1"
+            app:layout_constraintTop_toBottomOf="@id/txtView_HeroiHabilidades"
+            app:layout_constraintStart_toEndOf="@id/imgView_Heroi"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroi"
+            app:layout_constraintBottom_toTopOf="@id/txtView_HeroiHabilidade_2" />
+
+        <TextView
+            android:id="@+id/txtView_HeroiHabilidade_2"
+            style="@style/TextViewGameDesc"
+            android:layout_marginLeft="140dp"
+            android:text="@string/game_habilidade_2"
+            app:layout_constraintTop_toBottomOf="@id/txtView_HeroiHabilidade_1"
+            app:layout_constraintStart_toEndOf="@id/imgView_Heroi"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroi"
+            app:layout_constraintBottom_toTopOf="@id/txtView_HeroiEspecialTitle" />
+
+        <TextView
+            android:id="@+id/txtView_HeroiEspecialTitle"
+            style="@style/TextViewGameTitle"
+            android:layout_marginLeft="140dp"
+            android:text="@string/game_especial_title"
+            app:layout_constraintTop_toBottomOf="@id/txtView_HeroiHabilidade_2"
+            app:layout_constraintStart_toEndOf="@id/imgView_Heroi"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroi"
+            app:layout_constraintBottom_toTopOf="@id/txtView_HeroiEspecial" />
+
+        <TextView
+            android:id="@+id/txtView_HeroiEspecial"
+            style="@style/TextViewGameDesc"
+            android:layout_marginLeft="140dp"
+            android:text="@string/game_especial_title"
+            app:layout_constraintTop_toBottomOf="@id/txtView_HeroiEspecialTitle"
+            app:layout_constraintStart_toEndOf="@id/imgView_Heroi"
+            app:layout_constraintEnd_toEndOf="@id/view_containerHeroi"
+            app:layout_constraintBottom_toBottomOf="@id/view_containerHeroi" />
+
+        <View
+            android:id="@+id/view_containerButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/view_containerHeroi"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_heroiEsq"
+            android:background="@drawable/buttom"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btn_hero_left"
+            app:layout_constraintTop_toTopOf="@id/view_containerButton"
+            app:layout_constraintStart_toStartOf="@id/view_containerButton"
+            app:layout_constraintEnd_toStartOf="@id/btn_resolvendoAsCoisas"
+            app:layout_constraintBottom_toBottomOf="@id/view_containerButton"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_resolvendoAsCoisas"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttom"
+            android:text="@string/btn_start_combat"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/view_containerButton"
+            app:layout_constraintStart_toEndOf="@id/btn_heroiEsq"
+            app:layout_constraintEnd_toStartOf="@id/btn_heroiDir"
+            app:layout_constraintBottom_toBottomOf="@id/view_containerButton"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_heroiDir"
+            android:background="@drawable/buttom"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_hero_right"
+            app:layout_constraintTop_toTopOf="@id/view_containerButton"
+            app:layout_constraintStart_toEndOf="@id/btn_resolvendoAsCoisas"
+            app:layout_constraintEnd_toEndOf="@id/view_containerButton"
+            app:layout_constraintBottom_toBottomOf="@id/view_containerButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

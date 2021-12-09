@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Timedeferroapp">
         <activity
+            android:name=".activity.HeroiDoDiaActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ResumoDaTretaActivity"
             android:exported="false" />
         <activity

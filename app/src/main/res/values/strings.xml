@@ -8,9 +8,11 @@
 
     <string name="game_continue">Continues: </string>
     <string name="game_resumo_da_treta">Resumo da Treta</string>
+    <string name="game_heroi_do_dia">Herói do Dia</string>
     <string name="game_cenario">Lugar: </string>
     <string name="game_problema">Treta: </string>
-    <string name="game_antagonista">Meliante</string>
+    <string name="game_antagonista">Meliante: </string>
+    <string name="game_heroi">Herói: </string>
     <string name="game_habilidades_title">Habilidades</string>
     <string name="game_habilidade_1">Habilidade 1</string>
     <string name="game_habilidade_2">Habilidade 2</string>
@@ -28,7 +30,10 @@
     <string name="btn_new_game">Novo Jogo</string>
     <string name="btn_next">Avançar</string>
     <string name="btn_start">Começar</string>
-    <string name="btn_day_hero">Herói do Dia</string>
+    <string name="btn_hero_select">Herói do Dia</string>
+    <string name="btn_start_combat">Resolver a treta</string>
+    <string name="btn_hero_left">Herói Esquerda</string>
+    <string name="btn_hero_right">Herói Direita</string>
 
     <string-array name="cenarios">
         <item>Banco Verde</item>
