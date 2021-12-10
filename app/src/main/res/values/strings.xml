@@ -18,6 +18,10 @@
     <string name="game_habilidade_2">Habilidade 2</string>
     <string name="game_especial_title">Especial</string>
     <string name="game_especial">Especial</string>
+    <string name="game_rank">Rank de Classificação</string>
+    <string name="game_rank_classificacao">Classificação: </string>
+    <string name="game_rank_score">Score</string>
+    <string name="game_score_pontuacao">pontos</string>
 
 
     <string name="game_title_history">Saranda City</string>
@@ -34,6 +38,7 @@
     <string name="btn_start_combat">Resolver a treta</string>
     <string name="btn_hero_left">Herói Esquerda</string>
     <string name="btn_hero_right">Herói Direita</string>
+    <string name="btn_mapa">Mapa de Saranda City</string>
 
     <string-array name="cenarios">
         <item>Banco Verde</item>
@@ -57,27 +62,27 @@
     <string name="vilao_nome">Lirou Diou, Pintier Raivoso</string>
     <string name="vilao_desc">O novo chefão do crime do “Bairro Proibido”, durante algum tempo foi um simples e bom funcionário. Mas, sofria de uma rara condição que o deixava agitado quando era contrariado. Após grandes eventos em “Saranda City”, ele aproveitou o vácuo de poder para tomar o controle do submundo do crime no “Beco da Facada”. Isso afetou muito a ordem natural na região, e por isso os meliantes estão mais atrevidos do que nunca.</string>
 
-    <string name="antagonista_1_nome">Carlão, agiota que não mata</string>
+    <string name="antagonista_1_nome">Carlao agiota que nao mata</string>
     <string name="antagonista_1_h1">Paulada na Molera</string>
     <string name="antagonista_1_h2">Facada no bucho</string>
     <string name="antagonista_1_esp">Vem que tem din-din</string>
 
-    <string name="antagonista_2_nome">Luma Madeira, mulher com voz de homem</string>
+    <string name="antagonista_2_nome">Luma Madeira mulher com voz de homem</string>
     <string name="antagonista_2_h1">Arroto sagaz</string>
     <string name="antagonista_2_h2">Grito de guerra</string>
     <string name="antagonista_2_esp">Minha voz é assim por causa do cigarro</string>
 
-    <string name="antagonista_3_nome">Toninho, bêbado tarado</string>
+    <string name="antagonista_3_nome">Toninho bebado tarado</string>
     <string name="antagonista_3_h1">Amigo do peito</string>
     <string name="antagonista_3_h2">De rosto colado</string>
     <string name="antagonista_3_esp">Opa, passei a mão sem querer</string>
 
-    <string name="antagonista_4_nome">Pingu Lin, cozinheiro asiático</string>
+    <string name="antagonista_4_nome">Pingu Lin cozinheiro asiatico</string>
     <string name="antagonista_4_h1">Pastel de “flango”</string>
     <string name="antagonista_4_h2">Cabeça de bagre</string>
     <string name="antagonista_4_esp">Essa “clane” não é de “cacholo”</string>
 
-    <string name="antagonista_5_nome">Juninho, fanático político de apartamento</string>
+    <string name="antagonista_5_nome">Juninho fanatico politico de apartamento</string>
     <string name="antagonista_5_h1">Meu herói</string>
     <string name="antagonista_5_h2">Cientista político</string>
     <string name="antagonista_5_esp">Eles querem nos matar</string>
@@ -124,7 +129,7 @@
 
     <string name="heroi_5_nome">DJ Golfinho</string>
     <string name="heroi_5_desc">As vezes participa de corridas de carros proibidas, e nas horas vagas é chamado em festas para “discotecar” (ele só aperta o play, mas tudo bem).</string>
-    <string name="heroi_5_origem_poder">Ciência</string>
+    <string name="heroi_5_origem_poder">Ciencia</string>
     <string name="heroi_5_estilo">Controle</string>
     <string name="heroi_5_tipo">Pedra</string>
     <string name="heroi_5_frase">“Meu chapéu!”</string>

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Timedeferroapp">
         <activity
+            android:name=".activity.RankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GameOverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CombateActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.HeroiDoDiaActivity"
             android:exported="false" />
         <activity

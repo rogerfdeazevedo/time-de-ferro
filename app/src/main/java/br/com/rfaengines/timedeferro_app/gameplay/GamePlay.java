@@ -57,4 +57,19 @@ public class GamePlay {
         }
     }
 
+    public int getLevelAtual() {
+        return levelAtual;
+    }
+
+    public Jogador getJogador() {
+        return jogador;
+    }
+
+    public Computador getComputador() {
+        return computador;
+    }
+
+    public Aventura getAventura() {
+        return aventura;
+    }
 }
