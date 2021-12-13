@@ -98,6 +98,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.0.8 - Layout - Splash Activity
 * 0.0.7 - Layout - Tela#05 - Herói do Dia (Seleção de Herói)
 * 0.0.6 - Layout - Tela#04 - Resumo da Treta (Descriçao da Missão) 
 * 0.0.5 - Revisão geral de layout
