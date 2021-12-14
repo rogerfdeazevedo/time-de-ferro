@@ -13,6 +13,21 @@
         android:background="@drawable/background"
         tools:context=".activity.MainActivity">
 
+        <TextView
+            android:id="@+id/textView_appVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="@string/app_version"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/view_containerHeader" />
+
         <View
             android:id="@+id/view_containerHeader"
             android:background="@drawable/container_logo"
@@ -22,15 +37,16 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_appVersion"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/imgView_logo" />
 
         <ImageView
-            android:layout_width="100dp"
+            android:id="@+id/imgView_blackEagle"
+            android:layout_width="300dp"
             android:layout_height="50dp"
-            android:src="@drawable/img_black_eagle"
+            android:src="@drawable/img_black_eagle_stars"
             app:layout_constraintTop_toTopOf="@+id/view_containerHeader"
             app:layout_constraintStart_toStartOf="@+id/view_containerHeader"
             app:layout_constraintEnd_toEndOf="@+id/view_containerHeader"
