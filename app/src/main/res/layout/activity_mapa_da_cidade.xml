@@ -23,7 +23,7 @@
         <TextView
             android:id="@+id/txtView_title"
             style="@style/Title"
-            android:text="@string/title_activity_mapa_da_cidade"
+            android:text="@string/title_activity_city_map"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -68,6 +68,7 @@
         <TextView
             android:id="@+id/txtView_gameTitle"
             style="@style/TextViewGameTitle"
+            android:layout_marginTop="20dp"
             android:text="@string/game_title_tutorial"
             app:layout_constraintTop_toTopOf="@id/view_containerComponentsTips"
             app:layout_constraintStart_toStartOf="@id/view_containerComponentsTips"
@@ -77,6 +78,7 @@
         <TextView
             android:id="@+id/txtView_gameDesc"
             style="@style/TextViewGameDesc"
+            android:layout_marginBottom="30dp"
             android:text="@string/game_desc_tutorial"
             app:layout_constraintBottom_toBottomOf="@id/view_containerComponentsTips"
             app:layout_constraintEnd_toEndOf="@id/view_containerComponentsTips"
@@ -94,20 +96,6 @@
             app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
             app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
 
-        <TextView
-            android:id="@+id/txtView_PlayerStatus"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/game_continue"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="@id/view_containerPlayerStatus"
-            app:layout_constraintStart_toStartOf="@id/view_containerPlayerStatus"
-            app:layout_constraintEnd_toEndOf="@id/view_containerPlayerStatus"
-            app:layout_constraintBottom_toBottomOf="@+id/view_containerPlayerStatus"/>
-
         <ImageView
             android:id="@+id/imgView_ProfessorArtigo"
             android:src="@drawable/img_professor_artigo_sv_says"
@@ -120,65 +108,75 @@
             app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
             app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
 
+        <TextView
+            android:id="@+id/txtView_tentativas"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/game_continue"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/view_containerPlayerStatus"
+            app:layout_constraintStart_toStartOf="@id/view_containerPlayerStatus"
+            app:layout_constraintEnd_toEndOf="@id/view_containerPlayerStatus"
+            app:layout_constraintBottom_toBottomOf="@+id/view_containerPlayerStatus"/>
+
         <ImageView
             android:id="@+id/imgView_Lvl1"
-            android:src="@drawable/img_levelpoint_a_unlock"
+            android:src="@drawable/img_levelpoint_a"
             android:layout_marginTop="90dp"
             android:layout_marginRight="260dp"
             style="@style/ImgLevelPoint"
             app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
             app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
             app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"
-            />
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder" />
 
         <ImageView
             android:id="@+id/imgView_Lvl2"
-            android:src="@drawable/img_levelpoint_b_lock"
+            android:src="@drawable/img_levelpoint_b"
             android:layout_marginTop="150dp"
             android:layout_marginLeft="10dp"
             style="@style/ImgLevelPoint"
             app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
             app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
             app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"
-            />
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder" />
 
         <ImageView
             android:id="@+id/imgView_Lvl3"
-            android:src="@drawable/img_levelpoint_a_lock"
+            android:src="@drawable/img_levelpoint_a"
             android:layout_marginTop="320dp"
             android:layout_marginRight="195dp"
             style="@style/ImgLevelPoint"
             app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
             app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
             app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"
-            />
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder" />
 
         <ImageView
             android:id="@+id/imgView_Lvl4"
-            android:src="@drawable/img_levelpoint_b_lock"
+            android:src="@drawable/img_levelpoint_b"
             android:layout_marginTop="230dp"
             android:layout_marginLeft="260dp"
             style="@style/ImgLevelPoint"
             app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
             app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
             app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"
-            />
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder" />
 
         <ImageView
             android:id="@+id/imgView_Lvl5"
-            android:src="@drawable/img_levelpoint_b_lock"
+            android:src="@drawable/img_levelpoint_b"
             android:layout_marginTop="440dp"
             android:layout_marginLeft="130dp"
             style="@style/ImgLevelPoint"
             app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
             app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
             app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"
-            />
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

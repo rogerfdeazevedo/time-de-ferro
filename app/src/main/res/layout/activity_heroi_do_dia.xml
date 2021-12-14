@@ -23,7 +23,7 @@
         <TextView
             android:id="@+id/txtView_title"
             style="@style/Title"
-            android:text="@string/title_activity_mapa_da_cidade"
+            android:text="@string/title_activity_city_map"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -73,7 +73,6 @@
             app:layout_constraintStart_toStartOf="@id/view_containerHeroiDoDiaTitle"
             app:layout_constraintEnd_toEndOf="@id/view_containerHeroiDoDiaTitle"
             app:layout_constraintBottom_toBottomOf="@id/view_containerHeroiDoDiaTitle" />
-
 
         <View
             android:id="@+id/view_containerTretaStatus"
