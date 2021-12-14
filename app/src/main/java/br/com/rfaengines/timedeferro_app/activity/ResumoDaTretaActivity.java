@@ -1,7 +1,6 @@
 package br.com.rfaengines.timedeferro_app.activity;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;

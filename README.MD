@@ -98,6 +98,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.0.11 - Revisão/remoção tutorial activity
 * 0.0.10 - Revisão main activity
 * 0.0.9 - Layout - Splash Activity
 * 0.0.8 - revisão activites + segunda etapa parte logica

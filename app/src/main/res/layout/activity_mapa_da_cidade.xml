@@ -77,11 +77,11 @@
         <TextView
             android:id="@+id/txtView_gameDesc"
             style="@style/TextViewGameDesc"
-            android:text="@string/game_desc_level"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_gameTitle"
-            app:layout_constraintStart_toStartOf="@id/view_containerComponentsTips"
+            android:text="@string/game_desc_tutorial"
+            app:layout_constraintBottom_toBottomOf="@id/view_containerComponentsTips"
             app:layout_constraintEnd_toEndOf="@id/view_containerComponentsTips"
-            app:layout_constraintBottom_toBottomOf="@id/view_containerComponentsTips" />
+            app:layout_constraintStart_toStartOf="@id/view_containerComponentsTips"
+            app:layout_constraintTop_toBottomOf="@+id/txtView_gameTitle" />
 
         <View
             android:id="@+id/view_containerPlayerStatus"

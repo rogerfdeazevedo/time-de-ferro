@@ -1,10 +1,10 @@
 package br.com.rfaengines.timedeferro_app.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import br.com.rfaengines.timedeferro_app.R;
 
