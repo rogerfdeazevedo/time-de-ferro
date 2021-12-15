@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">TimeDeFerro</string>
-    <string name="app_version">v.0.0.13</string>
+    <string name="app_version">v.0.0.14</string>
     <string name="app_from">Roger de Azevedo</string>
 
     <string name="title_activity_tutorial">Introdução com Professor Artigo</string>
@@ -14,7 +14,10 @@
     <string name="game_problema">Treta: %s</string>
     <string name="game_antagonista">Meliante: %s</string>
     <string name="game_antagonista_historico">Historico</string>
-    <string name="game_heroi">Herói: %s</string>
+    <string name="game_heroi">Herói</string>
+    <string name="game_heroi_historico">Historico</string>
+    <string name="game_heroi_origem_do_poder">Origem Poder: %s</string>
+    <string name="game_heroi_estilo">Estilo: %s</string>
     <string name="game_habilidades_title">**Habilidades</string>
     <string name="game_habilidade_1">Habilidade 1</string>
     <string name="game_habilidade_2">Habilidade 2</string>
@@ -36,7 +39,7 @@
     <string name="btn_next">Avançar</string>
     <string name="btn_start">Começar</string>
     <string name="btn_hero_select">Herói do Dia</string>
-    <string name="btn_start_combat">Resolver a treta</string>
+    <string name="btn_start_combat">Enviar Herói</string>
     <string name="btn_hero_left">Herói Esquerda</string>
     <string name="btn_hero_right">Herói Direita</string>
     <string name="btn_mapa">Mapa de Saranda City</string>
@@ -69,11 +72,11 @@
     <string name="antagonista_1_h2">Facada no bucho</string>
     <string name="antagonista_1_esp">Vem que tem din-din</string>
 
-    <string name="antagonista_2_nome">Luma Madeira</string>
+    <string name="antagonista_2_nome">Tasha Padonna</string>
     <string name="antagonista_2_historico">Fumante compulsiva</string>
     <string name="antagonista_2_h1">Arroto sagaz</string>
     <string name="antagonista_2_h2">Grito de guerra</string>
-    <string name="antagonista_2_esp">Minha voz é assim por causa do cigarro</string>
+    <string name="antagonista_2_esp">Minha voz é assim por causa do *cigarro</string>
 
     <string name="antagonista_3_nome">Toninho</string>
     <string name="antagonista_3_historico">Bêbado assanhado</string>

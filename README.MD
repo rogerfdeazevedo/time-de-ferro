@@ -98,6 +98,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.0.14 - Tela Heroi do dia
 * 0.0.13 - versao bomba - revisão geral
 * 0.0.12 - Revisão mapa da cidade activity
 * 0.0.11 - Revisão/remoção tutorial activity

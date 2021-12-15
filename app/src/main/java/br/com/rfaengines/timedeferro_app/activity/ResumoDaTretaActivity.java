@@ -18,7 +18,6 @@ import br.com.rfaengines.timedeferro_app.gameplay.GamePlayManager;
 public class ResumoDaTretaActivity extends AppCompatActivity {
 
     private TextView txtView_StatusJogador_Tentativas;
-
     private TextView txtView_Cenario;
     private TextView txtView_Problema;
     private TextView txtView_Antagonista_Nome;
@@ -33,7 +32,7 @@ public class ResumoDaTretaActivity extends AppCompatActivity {
 
     private GamePlay gamePlay;
 
-    private int levelAtual;
+    private int indexMissao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +71,7 @@ public class ResumoDaTretaActivity extends AppCompatActivity {
 
         gamePlay = GamePlayManager.getGamePlay();
 
-        levelAtual = gamePlay.getLevelAtual() - 1;
+        indexMissao = gamePlay.getLevelAtual() - 1;
 
     }
 
@@ -93,38 +92,38 @@ public class ResumoDaTretaActivity extends AppCompatActivity {
 
     private void carregarResumoDaTreta(){
 
-        String cenario = gamePlay.getAventura().getMissoes().get(levelAtual).getCenarioDTO().getDescricao();
+        String cenario = gamePlay.getAventura().getMissoes().get(indexMissao).getCenarioDTO().getDescricao();
         txtView_Cenario.setText(getString(R.string.game_cenario, cenario));
 
-        String problema = gamePlay.getAventura().getMissoes().get(levelAtual).getProblemaDTO().getDescricao();
+        String problema = gamePlay.getAventura().getMissoes().get(indexMissao).getProblemaDTO().getDescricao();
         txtView_Problema.setText(getString(R.string.game_problema, problema));
 
     }
 
     private void carregarAtributosAntagonista(){
 
-        String nome = gamePlay.getAventura().getMissoes().get(levelAtual).getAntagonistaDTO().getNome();
+        String nome = gamePlay.getAventura().getMissoes().get(indexMissao).getAntagonistaDTO().getNome();
         txtView_Antagonista_Nome.setText(getString(R.string.game_antagonista, nome));
 
-        String historico = gamePlay.getAventura().getMissoes().get(levelAtual).getAntagonistaDTO().getHistorico();
+        String historico = gamePlay.getAventura().getMissoes().get(indexMissao).getAntagonistaDTO().getHistorico();
         txtView_Antagonista_Historico.setText(historico);
 
-        String habilidade_1 = gamePlay.getAventura().getMissoes().get(levelAtual).getAntagonistaDTO().getHabilidades().get(0).getNome()
-                + ": " + gamePlay.getAventura().getMissoes().get(levelAtual).getAntagonistaDTO().getHabilidades().get(0).getValor();
+        String habilidade_1 = gamePlay.getAventura().getMissoes().get(indexMissao).getAntagonistaDTO().getHabilidades().get(0).getNome()
+                + ": " + gamePlay.getAventura().getMissoes().get(indexMissao).getAntagonistaDTO().getHabilidades().get(0).getValor();
         txtView_Antagonista_Habilidade_1.setText(habilidade_1);
 
-        String habilidade_2 = gamePlay.getAventura().getMissoes().get(levelAtual).getAntagonistaDTO().getHabilidades().get(1).getNome()
-                + ": " + gamePlay.getAventura().getMissoes().get(levelAtual).getAntagonistaDTO().getHabilidades().get(1).getValor();
+        String habilidade_2 = gamePlay.getAventura().getMissoes().get(indexMissao).getAntagonistaDTO().getHabilidades().get(1).getNome()
+                + ": " + gamePlay.getAventura().getMissoes().get(indexMissao).getAntagonistaDTO().getHabilidades().get(1).getValor();
         txtView_Antagonista_Habilidade_2.setText(habilidade_2);
 
-        String especial = gamePlay.getAventura().getMissoes().get(levelAtual).getAntagonistaDTO().getEspecial().getNome();
+        String especial = gamePlay.getAventura().getMissoes().get(indexMissao).getAntagonistaDTO().getEspecial().getNome();
         txtView_Antagonista_Especial.setText(especial);
 
     }
 
     private void carregarIconesTretaCenario(){
 
-        OrigemDoPoder origemDoPoder = gamePlay.getAventura().getMissoes().get(levelAtual).getCenarioDTO().getOrigemDoPoder();
+        OrigemDoPoder origemDoPoder = gamePlay.getAventura().getMissoes().get(indexMissao).getCenarioDTO().getOrigemDoPoder();
 
         if(OrigemDoPoder.CIENCIA.equals(origemDoPoder)){
             txtView_Cenario.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.img_ico_origem_poder_a, 0);
@@ -146,7 +145,7 @@ public class ResumoDaTretaActivity extends AppCompatActivity {
 
     private void carregarIconesTretaProblema(){
 
-        Estilo estilo = gamePlay.getAventura().getMissoes().get(levelAtual).getProblemaDTO().getEstilo();
+        Estilo estilo = gamePlay.getAventura().getMissoes().get(indexMissao).getProblemaDTO().getEstilo();
 
         if(Estilo.SUPORTE.equals(estilo)){
             txtView_Problema.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.img_ico_estilo_a, 0);

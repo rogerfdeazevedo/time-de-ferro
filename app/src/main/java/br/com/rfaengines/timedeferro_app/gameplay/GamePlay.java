@@ -5,6 +5,7 @@ import java.util.List;
 import br.com.rfaengines.timedeferro_app.dto.personagem.AntagonistaDTO;
 import br.com.rfaengines.timedeferro_app.dto.personagem.HeroiDTO;
 import br.com.rfaengines.timedeferro_app.factory.AventuraFactory;
+import br.com.rfaengines.timedeferro_app.factory.HeroiFactory;
 import br.com.rfaengines.timedeferro_app.factory.ParticipanteFactory;
 
 public class GamePlay {
@@ -34,6 +35,7 @@ public class GamePlay {
     public void iniciar(){
         iniciarParticipantes();
         iniciarAventura();
+        iniciarHerois();
     }
 
     private void iniciarParticipantes() {
@@ -47,8 +49,14 @@ public class GamePlay {
         this.aventura = aventuraFactory.novaAventura();
     }
 
+    private void iniciarHerois(){
+        this.herois = HeroiFactory.distribuirPontosDeHabilidades(this.herois);
+    }
+
     public void selecionarHeroi(HeroiDTO heroiSelecionado){
         this.heroiAtual = heroiSelecionado;
+        int indexMissao = this.levelAtual - 1;
+        this.aventura.getMissoes().get(indexMissao).setHeroiDTO(this.heroiAtual);
     }
 
     public void avancarProximoLevel(){
@@ -72,4 +80,9 @@ public class GamePlay {
     public Aventura getAventura() {
         return aventura;
     }
+
+    public List<HeroiDTO> getHerois() {
+        return herois;
+    }
+
 }
