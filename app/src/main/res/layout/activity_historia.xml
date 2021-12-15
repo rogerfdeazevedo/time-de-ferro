@@ -14,7 +14,7 @@
         tools:context=".activity.TutorialActivity">
 
         <View
-            android:id="@+id/view_containerTitle"
+            android:id="@+id/view_ContainerTitulo_ActivityHistoria"
             style="@style/ContainerTitle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
             />
 
         <TextView
-            android:id="@+id/txtView_title"
+            android:id="@+id/txtView_Titulo_ActivityHistoria"
             style="@style/Title"
             android:text="@string/title_activity_tutorial"
             app:layout_constraintTop_toTopOf="parent"
@@ -30,55 +30,64 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <View
-            android:id="@+id/view_ContainerImgCena"
+            android:id="@+id/view_Container_CenaEscritorio_ActivityHistoria"
             style="@style/ContainerCenaBorder"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_title"
+            app:layout_constraintTop_toBottomOf="@+id/txtView_Titulo_ActivityHistoria"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/view_containerComponents"/>
+            app:layout_constraintBottom_toTopOf="@+id/view_ContainerComponents_ActivityHistoria"/>
 
         <ImageView
-            android:id="@+id/imgView_CenaEscritorio"
+            android:id="@+id/imgView_CenaEscritorio_ActivityHistoria"
             android:src="@drawable/img_escritorio"
             style="@style/ImgCena"
-            app:layout_constraintTop_toTopOf="@+id/view_ContainerImgCena"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerImgCena"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerImgCena"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerImgCena"/>
+            app:layout_constraintTop_toTopOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"
+            app:layout_constraintStart_toStartOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"
+            app:layout_constraintEnd_toEndOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"
+            app:layout_constraintBottom_toBottomOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"/>
 
         <View
-            android:id="@+id/view_containerComponents"
+            android:id="@+id/view_ContainerComponents_ActivityHistoria"
             style="@style/ContainerComponents"
-            app:layout_constraintTop_toBottomOf="@+id/view_ContainerImgCena"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_Container_CenaEscritorio_ActivityHistoria" />
 
         <TextView
-            android:id="@+id/txtView_gameTitle"
-            style="@style/TextViewGameTitle"
-            android:layout_marginTop="20dp"
+            android:id="@+id/txtView_InfoTitulo_ActivityHistoria"
+            style="@style/TextView_Text_Tilulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:text="@string/game_title_history"
-            app:layout_constraintBottom_toTopOf="@id/txtView_gameDesc"
-            app:layout_constraintEnd_toEndOf="@+id/view_containerComponents"
-            app:layout_constraintStart_toStartOf="@+id/view_containerComponents"
-            app:layout_constraintTop_toTopOf="@+id/view_containerComponents" />
+            app:layout_constraintTop_toTopOf="@+id/view_ContainerComponents_ActivityHistoria"
+            app:layout_constraintStart_toStartOf="@+id/view_ContainerComponents_ActivityHistoria"
+            app:layout_constraintEnd_toEndOf="@+id/view_ContainerComponents_ActivityHistoria"
+            app:layout_constraintBottom_toTopOf="@id/txtView_InfoDescricao_ActivityHistoria"
+             />
 
         <TextView
-            android:id="@+id/txtView_gameDesc"
-            style="@style/TextViewGameDesc"
+            android:id="@+id/txtView_InfoDescricao_ActivityHistoria"
+            style="@style/TextView_Text_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:layout_marginBottom="100dp"
             android:text="@string/game_desc_history"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_gameTitle"
-            app:layout_constraintStart_toStartOf="@+id/view_containerComponents"
-            app:layout_constraintEnd_toEndOf="@+id/view_containerComponents"
-            app:layout_constraintBottom_toBottomOf="@+id/view_containerComponents"/>
+            app:layout_constraintTop_toBottomOf="@+id/txtView_InfoTitulo_ActivityHistoria"
+            app:layout_constraintStart_toStartOf="@+id/view_ContainerComponents_ActivityHistoria"
+            app:layout_constraintEnd_toEndOf="@+id/view_ContainerComponents_ActivityHistoria"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerComponents_ActivityHistoria"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_Avancar"
+            android:id="@+id/btn_Avancar_ActivityHistoria"
             style="@style/Buttom"
             android:text="@string/btn_next"
-            app:layout_constraintTop_toBottomOf="@+id/view_containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/view_ContainerComponents_ActivityHistoria"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />

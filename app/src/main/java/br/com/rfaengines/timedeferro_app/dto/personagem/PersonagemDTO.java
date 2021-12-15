@@ -20,4 +20,5 @@ public class PersonagemDTO {
     private List<HabilidadeDTO> habilidades;
     private HabilidadeDTO especial;
     private String nome;
+    private String historico;
 }

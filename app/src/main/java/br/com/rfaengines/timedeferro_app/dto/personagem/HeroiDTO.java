@@ -13,5 +13,4 @@ public class HeroiDTO extends PersonagemDTO {
     private OrigemDoPoder origemDoPoder;
     private Estilo estilo;
     private String fraseDeEfeito;
-    private String historico;
 }

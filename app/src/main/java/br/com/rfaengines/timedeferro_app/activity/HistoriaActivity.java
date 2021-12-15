@@ -22,12 +22,14 @@ import br.com.rfaengines.timedeferro_app.gameplay.GamePlayManager;
 
 public class HistoriaActivity extends AppCompatActivity {
 
-    private Button btn_avancar;
+    private Button btn_Avancar;
 
     private List<HeroiDTO> herois;
     private List<String> cenarios;
     private List<String> problemas;
     private List<AntagonistaDTO> antagonistas;
+
+    private GamePlay gamePlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,21 +37,25 @@ public class HistoriaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_historia);
         getSupportActionBar().hide();
 
-        btn_avancar = findViewById(R.id.btn_Avancar);
+        carregarComponentes();
 
-        btn_avancar.setOnClickListener(new View.OnClickListener() {
+        btn_Avancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 carregarCenarios();
                 carregarProblemas();
                 carregarAntagonistas();
                 carregarHerois();
-                comecarJogo();
+                carregarGamePlay();
                 Intent intent = new Intent(HistoriaActivity.this, MapaDaCidadeActivity.class);
                 startActivity(intent);
             }
         });
 
+    }
+
+    private void carregarComponentes(){
+        btn_Avancar = findViewById(R.id.btn_Avancar_ActivityHistoria);
     }
 
     /**
@@ -58,8 +64,8 @@ public class HistoriaActivity extends AppCompatActivity {
      * demorei muito pra começar a codificar
      * **/
 
-    private void comecarJogo(){
-        GamePlay gamePlay = new GamePlay(herois, cenarios, problemas, antagonistas);
+    private void carregarGamePlay(){
+        gamePlay = new GamePlay(herois, cenarios, problemas, antagonistas);
         GamePlayManager.setGamePlay(gamePlay);
         gamePlay.iniciar();
     }
@@ -111,26 +117,31 @@ public class HistoriaActivity extends AppCompatActivity {
 
         AntagonistaDTO antagonista_1 = new AntagonistaDTO();
         antagonista_1.setNome(getResources().getString(R.string.antagonista_1_nome));
+        antagonista_1.setHistorico(getResources().getString(R.string.antagonista_1_historico));
         antagonista_1.setHabilidades(getHabilidades(getResources().getString(R.string.antagonista_1_h1), getResources().getString(R.string.antagonista_1_h2)));
         antagonista_1.setEspecial(getEspecial(getResources().getString(R.string.antagonista_1_esp)));
 
         AntagonistaDTO antagonista_2 = new AntagonistaDTO();
         antagonista_2.setNome(getResources().getString(R.string.antagonista_2_nome));
+        antagonista_2.setHistorico(getResources().getString(R.string.antagonista_2_historico));
         antagonista_2.setHabilidades(getHabilidades(getResources().getString(R.string.antagonista_2_h1), getResources().getString(R.string.antagonista_2_h2)));
         antagonista_2.setEspecial(getEspecial(getResources().getString(R.string.antagonista_2_esp)));
 
         AntagonistaDTO antagonista_3 = new AntagonistaDTO();
         antagonista_3.setNome(getResources().getString(R.string.antagonista_3_nome));
-        antagonista_3.setHabilidades(getHabilidades(getResources().getString(R.string.antagonista_2_h1), getResources().getString(R.string.antagonista_2_h2)));
-        antagonista_3.setEspecial(getEspecial(getResources().getString(R.string.antagonista_2_esp)));
+        antagonista_3.setHistorico(getResources().getString(R.string.antagonista_3_historico));
+        antagonista_3.setHabilidades(getHabilidades(getResources().getString(R.string.antagonista_3_h1), getResources().getString(R.string.antagonista_3_h2)));
+        antagonista_3.setEspecial(getEspecial(getResources().getString(R.string.antagonista_3_esp)));
 
         AntagonistaDTO antagonista_4 = new AntagonistaDTO();
         antagonista_4.setNome(getResources().getString(R.string.antagonista_4_nome));
+        antagonista_4.setHistorico(getResources().getString(R.string.antagonista_4_historico));
         antagonista_4.setHabilidades(getHabilidades(getResources().getString(R.string.antagonista_4_h1), getResources().getString(R.string.antagonista_4_h2)));
         antagonista_4.setEspecial(getEspecial(getResources().getString(R.string.antagonista_4_esp)));
 
         AntagonistaDTO antagonista_5 = new AntagonistaDTO();
         antagonista_5.setNome(getResources().getString(R.string.antagonista_5_nome));
+        antagonista_5.setHistorico(getResources().getString(R.string.antagonista_5_historico));
         antagonista_5.setHabilidades(getHabilidades(getResources().getString(R.string.antagonista_5_h1), getResources().getString(R.string.antagonista_5_h2)));
         antagonista_5.setEspecial(getEspecial(getResources().getString(R.string.antagonista_5_esp)));
 
@@ -147,6 +158,7 @@ public class HistoriaActivity extends AppCompatActivity {
 
         HeroiDTO heroi_1 = new HeroiDTO();
         heroi_1.setNome(getResources().getString(R.string.heroi_1_nome));
+        heroi_1.setHistorico(getResources().getString(R.string.heroi_1_historico));
         heroi_1.setOrigemDoPoder(OrigemDoPoder.valueOf(getResources().getString(R.string.heroi_1_origem_poder).toUpperCase()));
         heroi_1.setEstilo(Estilo.valueOf(getResources().getString(R.string.heroi_1_estilo).toUpperCase()));
         heroi_1.setTipo(Tipo.valueOf(getResources().getString(R.string.heroi_1_tipo).toUpperCase()));
@@ -155,6 +167,7 @@ public class HistoriaActivity extends AppCompatActivity {
 
         HeroiDTO heroi_2 = new HeroiDTO();
         heroi_2.setNome(getResources().getString(R.string.heroi_2_nome));
+        heroi_2.setHistorico(getResources().getString(R.string.heroi_2_historico));
         heroi_2.setOrigemDoPoder(OrigemDoPoder.valueOf(getResources().getString(R.string.heroi_2_origem_poder).toUpperCase()));
         heroi_2.setEstilo(Estilo.valueOf(getResources().getString(R.string.heroi_2_estilo).toUpperCase()));
         heroi_2.setTipo(Tipo.valueOf(getResources().getString(R.string.heroi_2_tipo).toUpperCase()));
@@ -163,6 +176,7 @@ public class HistoriaActivity extends AppCompatActivity {
 
         HeroiDTO heroi_3 = new HeroiDTO();
         heroi_3.setNome(getResources().getString(R.string.heroi_3_nome));
+        heroi_3.setHistorico(getResources().getString(R.string.heroi_3_historico));
         heroi_3.setOrigemDoPoder(OrigemDoPoder.valueOf(getResources().getString(R.string.heroi_3_origem_poder).toUpperCase()));
         heroi_3.setEstilo(Estilo.valueOf(getResources().getString(R.string.heroi_3_estilo).toUpperCase()));
         heroi_3.setTipo(Tipo.valueOf(getResources().getString(R.string.heroi_3_tipo).toUpperCase()));
@@ -171,6 +185,7 @@ public class HistoriaActivity extends AppCompatActivity {
 
         HeroiDTO heroi_4 = new HeroiDTO();
         heroi_4.setNome(getResources().getString(R.string.heroi_4_nome));
+        heroi_4.setHistorico(getResources().getString(R.string.heroi_4_historico));
         heroi_4.setOrigemDoPoder(OrigemDoPoder.valueOf(getResources().getString(R.string.heroi_4_origem_poder).toUpperCase()));
         heroi_4.setEstilo(Estilo.valueOf(getResources().getString(R.string.heroi_4_estilo).toUpperCase()));
         heroi_4.setTipo(Tipo.valueOf(getResources().getString(R.string.heroi_4_tipo).toUpperCase()));
@@ -179,6 +194,7 @@ public class HistoriaActivity extends AppCompatActivity {
 
         HeroiDTO heroi_5 = new HeroiDTO();
         heroi_5.setNome(getResources().getString(R.string.heroi_5_nome));
+        heroi_5.setHistorico(getResources().getString(R.string.heroi_5_historico));
         heroi_5.setOrigemDoPoder(OrigemDoPoder.valueOf(getResources().getString(R.string.heroi_5_origem_poder).toUpperCase()));
         heroi_5.setEstilo(Estilo.valueOf(getResources().getString(R.string.heroi_5_estilo).toUpperCase()));
         heroi_5.setTipo(Tipo.valueOf(getResources().getString(R.string.heroi_5_tipo).toUpperCase()));

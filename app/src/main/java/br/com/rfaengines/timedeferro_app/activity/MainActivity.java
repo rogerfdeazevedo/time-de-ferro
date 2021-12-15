@@ -11,7 +11,7 @@ import br.com.rfaengines.timedeferro_app.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_novo_jogo;
+    private Button btn_NovoJogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        btn_novo_jogo = findViewById(R.id.btn_novoJogo);
+        btn_NovoJogo = findViewById(R.id.btn_NovoJogo_ActivityMain);
 
-        btn_novo_jogo.setOnClickListener(new View.OnClickListener() {
+        btn_NovoJogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HistoriaActivity.class);

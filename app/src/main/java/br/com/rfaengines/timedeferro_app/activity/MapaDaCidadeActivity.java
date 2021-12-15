@@ -14,7 +14,7 @@ import br.com.rfaengines.timedeferro_app.gameplay.GamePlayManager;
 
 public class MapaDaCidadeActivity extends AppCompatActivity {
 
-    private TextView txtView_tentativas;
+    private TextView txtView_StatusJogador_Tentativas;
 
     private ImageView imgView_Lvl1;
     private ImageView imgView_Lvl2;
@@ -31,7 +31,7 @@ public class MapaDaCidadeActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         carregarComponentes();
-        carregadorDadosUI();
+        carregarDadosUI();
 
         imgView_Lvl1.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -44,18 +44,18 @@ public class MapaDaCidadeActivity extends AppCompatActivity {
 
     private void carregarComponentes(){
 
-        txtView_tentativas = findViewById(R.id.txtView_tentativas);
+        txtView_StatusJogador_Tentativas = findViewById(R.id.txtView_StatusJogador_Tentativas_ActivityMapaDaCidade);
 
-        imgView_Lvl1 = findViewById(R.id.imgView_Lvl1);
-        imgView_Lvl2 = findViewById(R.id.imgView_Lvl2);
-        imgView_Lvl3 = findViewById(R.id.imgView_Lvl3);
-        imgView_Lvl4 = findViewById(R.id.imgView_Lvl4);
-        imgView_Lvl5 = findViewById(R.id.imgView_Lvl5);
+        imgView_Lvl1 = findViewById(R.id.imgView_Lvl1_ActivityMapaDaCidade);
+        imgView_Lvl2 = findViewById(R.id.imgView_Lvl2_ActivityMapaDaCidade);
+        imgView_Lvl3 = findViewById(R.id.imgView_Lvl3_ActivityMapaDaCidade);
+        imgView_Lvl4 = findViewById(R.id.imgView_Lvl4_ActivityMapaDaCidade);
+        imgView_Lvl5 = findViewById(R.id.imgView_Lvl5_ActivityMapaDaCidade);
 
         gamePlay = GamePlayManager.getGamePlay();
     }
 
-    private void carregadorDadosUI(){
+    private void carregarDadosUI(){
         carregarStatusJogador();
         controleDeVisibilidadeDeLevel();
     }
@@ -63,7 +63,7 @@ public class MapaDaCidadeActivity extends AppCompatActivity {
     private void carregarStatusJogador(){
         String qtdStr = "" + gamePlay.getJogador().getQtdContinue();
         String tentativas = getString(R.string.game_continue, qtdStr);
-        txtView_tentativas.setText(tentativas);
+        txtView_StatusJogador_Tentativas.setText(tentativas);
     }
 
     private void controleDeVisibilidadeDeLevel(){

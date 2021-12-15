@@ -14,207 +14,272 @@
         tools:context=".activity.TutorialActivity">
 
         <View
-            android:id="@+id/view_containerTitle"
+            android:id="@+id/view_ContainerTitulo_ActivityResumoDaTreta"
             style="@style/ContainerTitle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/txtView_title"
+            android:id="@+id/txtView_Titulo_ActivityResumoDaTreta"
             style="@style/Title"
             android:text="@string/title_activity_city_map"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+<!--view_ContainerBorder_ActivityResumoDaTreta-->
+
         <View
-            android:id="@+id/view_ContainerBorder"
+            android:id="@+id/view_ContainerBorder_ActivityResumoDaTreta"
             style="@style/ContainerCityBackgroundBorder"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_title"
+            app:layout_constraintTop_toBottomOf="@+id/txtView_Titulo_ActivityResumoDaTreta"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageView
-            android:id="@+id/imgView_CityBackground"
-            android:src="@drawable/img_city_background"
+            android:id="@+id/imgView_CityBackground_ActivityResumoDaTreta"
             style="@style/ImgCityBackground"
-            app:layout_constraintTop_toTopOf="@+id/view_ContainerBorder"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerBorder"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder" />
+            android:src="@drawable/img_city_background"
+            app:layout_constraintTop_toTopOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder_ActivityResumoDaTreta" />
 
         <ImageView
-            android:id="@+id/imgView_cityMap"
+            android:id="@+id/imgView_CityMap_ActivityResumoDaTreta"
             android:src="@drawable/img_city_map"
             style="@style/ImgCityMap"
-            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
-            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
-            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"/>
+
+<!--view_Container_ResumoDaTreta_ActivityResumoDaTreta-->
 
         <View
-            android:id="@+id/view_containerResumoDaTretaTitle"
+            android:id="@+id/view_Container_ResumoDaTreta_ActivityResumoDaTreta"
             android:background="@drawable/container_components"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginBottom="600dp"
-            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
-            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
-            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+            android:layout_marginBottom="500dp"
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@id/view_ContainerBorder_ActivityResumoDaTreta"/>
 
         <TextView
-            android:id="@+id/txtView_resumoDaTretaTitle"
-            style="@style/TextViewGameTitle"
+            android:id="@+id/txtView_InfoTitulo_ActivityResumoDaTreta"
+            style="@style/TextView_Text_Tilulo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:text="@string/game_resumo_da_treta"
-            app:layout_constraintTop_toTopOf="@id/view_containerResumoDaTretaTitle"
-            app:layout_constraintStart_toStartOf="@id/view_containerResumoDaTretaTitle"
-            app:layout_constraintEnd_toEndOf="@id/view_containerResumoDaTretaTitle"
-            app:layout_constraintBottom_toBottomOf="@id/view_containerResumoDaTretaTitle" />
+            app:layout_constraintTop_toTopOf="@id/view_Container_ResumoDaTreta_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_Container_ResumoDaTreta_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_Container_ResumoDaTreta_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@id/view_Container_ResumoDaTreta_ActivityResumoDaTreta" />
 
+<!--view_Container_StatusJogador_ActivityResumoDaTreta-->
 
         <View
-            android:id="@+id/view_containerPlayerStatus"
+            android:id="@+id/view_Container_StatusJogador_ActivityResumoDaTreta"
             android:background="@drawable/container_logo"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="500dp"
-            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
-            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
-            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"/>
 
         <TextView
-            android:id="@+id/txtView_PlayerStatus"
+            android:id="@+id/txtView_StatusJogador_Tentativas_ActivityResumoDaTreta"
+            style="@style/TextView_Text_Tilulo"
             android:layout_width="150dp"
             android:layout_height="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="240dp"
             android:text="@string/game_continue"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="@id/view_containerPlayerStatus"
-            app:layout_constraintStart_toStartOf="@id/view_containerPlayerStatus"
-            app:layout_constraintEnd_toEndOf="@id/view_containerPlayerStatus"
-            app:layout_constraintBottom_toBottomOf="@+id/view_containerPlayerStatus"/>
+            app:layout_constraintTop_toTopOf="@id/view_Container_StatusJogador_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_Container_StatusJogador_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_Container_StatusJogador_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_Container_StatusJogador_ActivityResumoDaTreta"/>
+
+
+<!--view_ContainerCaracteristicas_ActivityResumoDaTreta-->
 
         <View
-            android:id="@+id/view_containerResumoDaTretaDesc"
+            android:id="@+id/view_ContainerCaracteristicas_ActivityResumoDaTreta"
             android:background="@drawable/container_components"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginBottom="295dp"
-            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
-            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
-            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+            android:layout_height="160dp"
+            android:layout_marginBottom="260dp"
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"/>
 
         <TextView
-            android:id="@+id/txtView_Cenario"
-            style="@style/TextViewGameTitle"
+            android:id="@+id/txtView_Cenario_ActivityResumoDaTreta"
+            android:drawableRight="@drawable/img_ico_origem_poder_a"
+            style="@style/TextView_Text_Tilulo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:text="@string/game_cenario"
-            app:layout_constraintTop_toTopOf="@id/view_containerResumoDaTretaDesc"
-            app:layout_constraintStart_toStartOf="@id/view_containerResumoDaTretaDesc"
-            app:layout_constraintEnd_toEndOf="@id/view_containerResumoDaTretaDesc"
-            app:layout_constraintBottom_toTopOf="@id/txtView_Problema" />
+            app:layout_constraintTop_toTopOf="@+id/view_ContainerCaracteristicas_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerCaracteristicas_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerCaracteristicas_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@id/txtView_Problema_ActivityResumoDaTreta" />
 
         <TextView
-            android:id="@+id/txtView_Problema"
-            style="@style/TextViewGameTitle"
+            android:id="@+id/txtView_Problema_ActivityResumoDaTreta"
+            android:drawableRight="@drawable/img_ico_estilo_a"
+            style="@style/TextView_Text_Tilulo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:text="@string/game_problema"
-            app:layout_constraintTop_toBottomOf="@id/txtView_Cenario"
-            app:layout_constraintStart_toStartOf="@id/view_containerResumoDaTretaDesc"
-            app:layout_constraintEnd_toEndOf="@id/view_containerResumoDaTretaDesc"
-            app:layout_constraintBottom_toBottomOf="@id/view_containerResumoDaTretaDesc" />
+            app:layout_constraintTop_toBottomOf="@id/txtView_Cenario_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerCaracteristicas_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerCaracteristicas_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@id/view_ContainerCaracteristicas_ActivityResumoDaTreta" />
+
+<!--view_ContainerCaracteristicas_ActivityResumoDaTreta-->
 
         <View
-            android:id="@+id/view_containerAntagonista"
+            android:id="@+id/view_ContainerAntagonista_ActivityResumoDaTreta"
             android:background="@drawable/container_components"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_marginTop="80dp"
-            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder"
-            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder"
-            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder"/>
+            android:layout_height="280dp"
+            android:layout_marginTop="190dp"
+            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder_ActivityResumoDaTreta"/>
 
         <ImageView
-            android:id="@+id/imgView_Antagonista"
+            android:id="@+id/imgView_Antagonista_ActivityResumoDaTreta"
             android:src="@drawable/img_char_silhuete_a"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginLeft="300dp"
-            app:layout_constraintTop_toTopOf="@id/view_containerAntagonista"
-            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
-            app:layout_constraintEnd_toEndOf="@id/view_containerAntagonista"
-            app:layout_constraintBottom_toBottomOf="@+id/view_containerAntagonista"/>
+            app:layout_constraintTop_toTopOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toEndOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerAntagonista_ActivityResumoDaTreta"/>
 
         <TextView
-            android:id="@+id/txtView_AntagonistaTipo"
-            style="@style/TextViewGameTitle"
+            android:id="@+id/txtView_Antagonista_Nome_ActivityResumoDaTreta"
+            style="@style/TextView_Text_Tilulo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:text="@string/game_antagonista"
-            app:layout_constraintTop_toTopOf="@id/view_containerAntagonista"
-            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
-            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
-            app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaHabilidades" />
+            app:layout_constraintTop_toTopOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@id/txtView_Antagonista_Historico_ActivityResumoDaTreta" />
 
         <TextView
-        android:id="@+id/txtView_AntagonistaHabilidades"
-        style="@style/TextViewGameTitle"
-        android:text="@string/game_habilidades_title"
-        app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaTipo"
-        app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
-        app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
-        app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaHabilidade_1" />
+            android:id="@+id/txtView_Antagonista_Historico_ActivityResumoDaTreta"
+            style="@style/TextView_Text_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/game_antagonista_historico"
+            app:layout_constraintTop_toBottomOf="@id/txtView_Antagonista_Nome_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@id/txtView_Antagonista_HabilidadesTitulo_ActivityResumoDaTreta" />
 
         <TextView
-            android:id="@+id/txtView_AntagonistaHabilidade_1"
-            style="@style/TextViewGameDesc"
+            android:id="@+id/txtView_Antagonista_HabilidadesTitulo_ActivityResumoDaTreta"
+            android:drawableLeft="@drawable/img_ico_habilidades"
+            style="@style/TextView_Text_Tilulo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/game_habilidades_title"
+            app:layout_constraintTop_toBottomOf="@id/txtView_Antagonista_Historico_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@id/txtView_Antagonista_Habilidade_1_ActivityResumoDaTreta" />
+
+        <TextView
+            android:id="@+id/txtView_Antagonista_Habilidade_1_ActivityResumoDaTreta"
+            style="@style/TextView_Text_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
             android:text="@string/game_habilidade_1"
-            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaHabilidades"
-            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
-            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
-            app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaHabilidade_2" />
+            app:layout_constraintTop_toBottomOf="@id/txtView_Antagonista_HabilidadesTitulo_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@id/txtView_Antagonista_Habilidade_2_ActivityResumoDaTreta" />
 
         <TextView
-            android:id="@+id/txtView_AntagonistaHabilidade_2"
-            style="@style/TextViewGameDesc"
-            android:text="@string/game_habilidade_2"
-            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaHabilidade_1"
-            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
-            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
-            app:layout_constraintBottom_toTopOf="@id/txtView_AntagonistaEspecialTitle" />
+            android:id="@+id/txtView_Antagonista_Habilidade_2_ActivityResumoDaTreta"
+            style="@style/TextView_Text_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/game_habilidade_1"
+            app:layout_constraintTop_toBottomOf="@id/txtView_Antagonista_Habilidade_1_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@id/txtView_Antagonista_EspecialTitulo_ActivityResumoDaTreta" />
 
         <TextView
-            android:id="@+id/txtView_AntagonistaEspecialTitle"
-            style="@style/TextViewGameTitle"
+            android:id="@+id/txtView_Antagonista_EspecialTitulo_ActivityResumoDaTreta"
+            android:drawableLeft="@drawable/img_ico_especial"
+            style="@style/TextView_Text_Tilulo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/game_especial_title"
-            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaHabilidade_2"
-            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
-            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
-            app:layout_constraintBottom_toBottomOf="@id/txtView_AntagonistaEspecial" />
+            app:layout_constraintTop_toBottomOf="@id/txtView_Antagonista_Habilidade_2_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toTopOf="@id/txtView_Antagonista_Especial_ActivityResumoDaTreta" />
 
         <TextView
-            android:id="@+id/txtView_AntagonistaEspecial"
-            style="@style/TextViewGameDesc"
-            android:text="@string/game_especial_title"
-            app:layout_constraintTop_toBottomOf="@id/txtView_AntagonistaEspecialTitle"
-            app:layout_constraintStart_toStartOf="@id/view_containerAntagonista"
-            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista"
-            app:layout_constraintBottom_toBottomOf="@id/view_containerAntagonista" />
+            android:id="@+id/txtView_Antagonista_Especial_ActivityResumoDaTreta"
+            style="@style/TextView_Text_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/game_especial"
+            app:layout_constraintTop_toBottomOf="@id/txtView_Antagonista_EspecialTitulo_ActivityResumoDaTreta"
+            app:layout_constraintStart_toStartOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta"
+            app:layout_constraintEnd_toStartOf="@id/imgView_Antagonista_ActivityResumoDaTreta"
+            app:layout_constraintBottom_toBottomOf="@id/view_ContainerAntagonista_ActivityResumoDaTreta" />
+
+<!--btn_HeroiDoDia_ActivityResumoDaTreta-->
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_heroiDoDia"
+            android:id="@+id/btn_HeroiDoDia_ActivityResumoDaTreta"
             style="@style/Buttom"
             android:text="@string/btn_hero_select"
-            app:layout_constraintTop_toBottomOf="@+id/view_containerAntagonista"
+            app:layout_constraintTop_toBottomOf="@+id/view_ContainerAntagonista_ActivityResumoDaTreta"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
