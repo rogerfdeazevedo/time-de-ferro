@@ -2,6 +2,7 @@ package br.com.rfaengines.timedeferro_app.activity;
 
 import static android.widget.Toast.LENGTH_SHORT;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -70,9 +71,12 @@ public class HeroiDoDiaActivity extends AppCompatActivity {
         btn_EnviarHeroi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                HeroiDTO heroiSelecionado = gamePlay.getHerois().get(indexHeroi);
-                gamePlay.selecionarHeroi(heroiSelecionado);
-                Toast.makeText(HeroiDoDiaActivity.this, "Avança para o combate!", LENGTH_SHORT).show();
+
+                selecionarHeroi();
+
+                Intent intent = new Intent(HeroiDoDiaActivity.this, CombateActivity.class);
+                startActivity(intent);
+
             }
         });
 
@@ -91,6 +95,11 @@ public class HeroiDoDiaActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void selecionarHeroi(){
+        HeroiDTO heroiSelecionado = gamePlay.getHerois().get(indexHeroi);
+        gamePlay.selecionarHeroi(heroiSelecionado);
     }
 
     private void carregarComponentes(){
