@@ -43,7 +43,6 @@ public class HeroiDoDiaActivity extends AppCompatActivity {
     private int indexHeroi;
     private int indexHeroiMaximo;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

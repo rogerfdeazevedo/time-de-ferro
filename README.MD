@@ -98,7 +98,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
-* Teste
+* 0.0.16 - Layout tela combate concluído
 * 0.0.15 - Layout tela combate
 * 0.0.14 - Tela Heroi do dia
 * 0.0.13 - versao bomba - revisão geral
