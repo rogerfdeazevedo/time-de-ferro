@@ -12,4 +12,5 @@ import lombok.ToString;
 public class ParticipanteDTO {
     protected boolean vencedor;
     protected boolean donoDoTurno;
+    protected int iniciativa;
 }

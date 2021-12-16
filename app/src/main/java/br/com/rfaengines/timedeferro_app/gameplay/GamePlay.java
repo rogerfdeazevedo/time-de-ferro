@@ -7,12 +7,16 @@ import br.com.rfaengines.timedeferro_app.dto.personagem.HeroiDTO;
 import br.com.rfaengines.timedeferro_app.factory.AventuraFactory;
 import br.com.rfaengines.timedeferro_app.factory.HeroiFactory;
 import br.com.rfaengines.timedeferro_app.factory.ParticipanteFactory;
+import br.com.rfaengines.timedeferro_app.gameplay.combate.Combate;
+import br.com.rfaengines.timedeferro_app.gameplay.participantes.Computador;
+import br.com.rfaengines.timedeferro_app.gameplay.participantes.Jogador;
 
 public class GamePlay {
 
     private Jogador jogador;
     private Computador computador;
     private Aventura aventura;
+    private Combate combate;
 
     private List<HeroiDTO> herois;
     private List<String> cenarios;
@@ -22,6 +26,7 @@ public class GamePlay {
     private HeroiDTO heroiAtual;
 
     private int levelAtual;
+
 
     public GamePlay(List<HeroiDTO> herois, List<String> cenarios, List<String> problemas
             , List<AntagonistaDTO> antagonistas){
@@ -36,6 +41,7 @@ public class GamePlay {
         iniciarParticipantes();
         iniciarAventura();
         iniciarHerois();
+        iniciarCombate();
     }
 
     private void iniciarParticipantes() {
@@ -50,7 +56,11 @@ public class GamePlay {
     }
 
     private void iniciarHerois(){
-        this.herois = HeroiFactory.distribuirPontosDeHabilidades(this.herois);
+        this.herois = HeroiFactory.distribuirPontosDeAtributos(this.herois);
+    }
+
+    private void iniciarCombate(){
+        this.combate = new Combate();
     }
 
     public void selecionarHeroi(HeroiDTO heroiSelecionado){
@@ -79,6 +89,10 @@ public class GamePlay {
 
     public Aventura getAventura() {
         return aventura;
+    }
+
+    public Combate getCombate(){
+        return combate;
     }
 
     public List<HeroiDTO> getHerois() {

@@ -48,6 +48,7 @@ public class ResumoDaTretaActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ResumoDaTretaActivity.this, HeroiDoDiaActivity.class);
                 startActivity(intent);
+
             }
         });
 

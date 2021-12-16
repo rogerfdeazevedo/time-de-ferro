@@ -36,10 +36,44 @@ public class MapaDaCidadeActivity extends AppCompatActivity {
         imgView_Lvl1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-                Intent intent = new Intent(MapaDaCidadeActivity.this, ResumoDaTretaActivity.class);
-                startActivity(intent);
+            resumoDaTretaActivity();
          }
         });
+
+        imgView_Lvl2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resumoDaTretaActivity();
+            }
+        });
+
+        imgView_Lvl3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resumoDaTretaActivity();
+            }
+        });
+
+        imgView_Lvl4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resumoDaTretaActivity();
+            }
+        });
+
+        imgView_Lvl5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resumoDaTretaActivity();
+            }
+        });
+
+    }
+
+    private void resumoDaTretaActivity(){
+        Intent intent = new Intent(MapaDaCidadeActivity.this, ResumoDaTretaActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void carregarComponentes(){

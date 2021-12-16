@@ -1,17 +1,27 @@
 package br.com.rfaengines.timedeferro_app.activity;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.Gravity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import br.com.rfaengines.timedeferro_app.R;
 import br.com.rfaengines.timedeferro_app.dto.personagem.AntagonistaDTO;
 import br.com.rfaengines.timedeferro_app.dto.personagem.HeroiDTO;
 import br.com.rfaengines.timedeferro_app.gameplay.GamePlay;
 import br.com.rfaengines.timedeferro_app.gameplay.GamePlayManager;
+import br.com.rfaengines.timedeferro_app.gameplay.Sistema;
 
 public class CombateActivity extends AppCompatActivity {
 
@@ -47,11 +57,122 @@ public class CombateActivity extends AppCompatActivity {
         carregarComponentes();
         carregarDadosUI();
 
+        inicioDoTurno();
+        verificaEspecialJogador();
+
+
+        btn_Habilidade_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gamePlay.getAventura().getMissoes().get(indexMissao).getHeroiDTO().getHabilidades().get(0).setFezHabilidade(true);
+                turnoDoJogador();
+            }
+        });
+
+        btn_Habilidade_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gamePlay.getAventura().getMissoes().get(indexMissao).getHeroiDTO().getHabilidades().get(1).setFezHabilidade(true);
+                turnoDoJogador();
+            }
+        });
+
+        btn_Especial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gamePlay.getAventura().getMissoes().get(indexMissao).getHeroiDTO().getEspecial().setFezHabilidade(true);
+                turnoDoJogador();
+            }
+        });
 
     }
 
 
-    private void carregarComponentes(){
+    private void inicioDoTurno(){
+
+        gamePlay.getCombate().iniciarStatusCombate();
+
+        gamePlay.getCombate().donoDoTurno();
+        txtView_Log.setText(gamePlay.getCombate().getCombateLog());
+
+        gamePlay.getCombate().acaoDoTurno();
+        mostrarLogUI();
+
+    }
+
+
+    private void verificaEspecialJogador(){
+
+        if(gamePlay.getCombate().isHabilitarEspecialHeroi()) {
+            btn_Especial.setVisibility(View.VISIBLE);
+        }
+
+    }
+
+    private void turnoDoJogador(){
+
+        gamePlay.getCombate().acaoDoComputador();
+        mostrarLogUI();
+
+        gamePlay.getCombate().confrontoHabilidade();
+        mostrarLogUI();
+
+        gamePlay.getCombate().resolucaoHabilidade();
+        mostrarLogUI();
+
+        gamePlay.getCombate().resolucaoEspecial();
+        mostrarLogUI();
+
+        gamePlay.getCombate().fimDoTurno();
+        mostrarLogUI();
+
+        if(gamePlay.getJogador().isVencedor()){
+            gamePlay.avancarProximoLevel();
+            sucesso();
+        }
+
+        if(gamePlay.getComputador().isVencedor()) {
+
+            if(gamePlay.getJogador().aindaTemTentativas()) {
+                gamePlay.getJogador().reduzirTentativas();
+                falha();
+            } else {
+                gamePlay.getJogador().setGameOver(true);
+                gameOver();
+            }
+        }
+
+
+    }
+
+    private void sucesso(){
+        Intent intent = new Intent(CombateActivity.this, WinActivity.class);
+        startActivity(intent);
+    }
+
+    private void falha(){
+        Intent intent = new Intent(CombateActivity.this, GameOverActivity.class);
+        startActivity(intent);
+    }
+
+    private void gameOver(){
+        Intent intent = new Intent(CombateActivity.this, GameOverActivity.class);
+        startActivity(intent);
+    }
+
+    private void mostrarLogUI()  {
+        String log = gamePlay.getCombate().getCombateLog();
+        txtView_Log.invalidate();
+        txtView_Log.setText(log);
+
+        Toast toastMessage = Toast.makeText(getApplicationContext(),log,Toast.LENGTH_SHORT);
+        toastMessage.setGravity(Gravity.TOP, 0, 0);
+        toastMessage.show();
+
+    }
+
+
+   private void carregarComponentes(){
 
         txtView_Heroi_Nome = findViewById(R.id.txtView_Heroi_Nome_ActivityCombate);
         txtView_Heroi_Energia = findViewById(R.id.txtView_Heroi_Energia_ActivityCombate);

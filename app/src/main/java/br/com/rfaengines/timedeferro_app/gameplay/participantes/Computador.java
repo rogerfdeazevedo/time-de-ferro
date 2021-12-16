@@ -1,4 +1,4 @@
-package br.com.rfaengines.timedeferro_app.gameplay;
+package br.com.rfaengines.timedeferro_app.gameplay.participantes;
 
 import br.com.rfaengines.timedeferro_app.dto.participante.ComputadorDTO;
 import lombok.Getter;

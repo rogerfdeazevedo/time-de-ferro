@@ -21,8 +21,11 @@ public class AntagonistaFactory {
         antagonistaDTO.setEnergia(Sistema.ENERGIA_MAXIMO);
         antagonistaDTO.setSorte(Sortear.num(1,Sistema.SORTE_MAXIMO));
         antagonistaDTO.getHabilidades().get(0).setValor(Sortear.num(1,Sistema.HABILIDADE_MAXIMO));
+        antagonistaDTO.getHabilidades().get(0).setFezHabilidade(false);
         antagonistaDTO.getHabilidades().get(1).setValor(Sortear.num(1,Sistema.HABILIDADE_MAXIMO));
+        antagonistaDTO.getHabilidades().get(1).setFezHabilidade(false);
         antagonistaDTO.getEspecial().setValor(0);
+        antagonistaDTO.getEspecial().setFezHabilidade(false);
 
         return antagonistaDTO;
     }

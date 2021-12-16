@@ -11,4 +11,5 @@ import lombok.ToString;
 @NoArgsConstructor
 public class JogadorDTO extends ParticipanteDTO {
     protected int qtdContinue;
+    protected boolean gameOver;
 }

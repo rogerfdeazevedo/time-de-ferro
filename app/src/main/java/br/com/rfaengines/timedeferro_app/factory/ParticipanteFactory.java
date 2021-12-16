@@ -1,8 +1,8 @@
 package br.com.rfaengines.timedeferro_app.factory;
 
-import br.com.rfaengines.timedeferro_app.gameplay.Computador;
-import br.com.rfaengines.timedeferro_app.gameplay.Jogador;
 import br.com.rfaengines.timedeferro_app.gameplay.Sistema;
+import br.com.rfaengines.timedeferro_app.gameplay.participantes.Computador;
+import br.com.rfaengines.timedeferro_app.gameplay.participantes.Jogador;
 
 public class ParticipanteFactory {
 
@@ -10,7 +10,8 @@ public class ParticipanteFactory {
         Jogador jogador = new Jogador();
         jogador.setDonoDoTurno(false);
         jogador.setVencedor(false);
-        jogador.setQtdContinue(Sistema.CONTINUE_MAXIMO);
+        jogador.setQtdContinue(Sistema.TANTATIVAS_MAXIMO);
+        jogador.setGameOver(false);
         return jogador;
     }
 

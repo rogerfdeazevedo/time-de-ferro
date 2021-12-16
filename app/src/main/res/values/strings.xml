@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">TimeDeFerro</string>
-    <string name="app_version">v.0.0.16</string>
+    <string name="app_version">v.0.1.0</string>
     <string name="app_from">Roger de Azevedo</string>
 
     <string name="title_activity_tutorial">Introdução com Professor Artigo</string>

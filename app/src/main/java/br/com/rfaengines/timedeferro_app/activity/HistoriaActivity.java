@@ -49,6 +49,7 @@ public class HistoriaActivity extends AppCompatActivity {
                 carregarGamePlay();
                 Intent intent = new Intent(HistoriaActivity.this, MapaDaCidadeActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

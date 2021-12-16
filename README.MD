@@ -98,6 +98,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.1.0 - Versão incompleta mas jogavel, com muitos bugs para corrigir
 * 0.0.16 - Layout tela combate concluído
 * 0.0.15 - Layout tela combate
 * 0.0.14 - Tela Heroi do dia

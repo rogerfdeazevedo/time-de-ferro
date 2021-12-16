@@ -12,4 +12,5 @@ import lombok.ToString;
 public class HabilidadeDTO {
     private String nome;
     private int valor;
+    private boolean fezHabilidade;
 }
