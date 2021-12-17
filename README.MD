@@ -98,6 +98,7 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 ## Release History
 
+* 0.1.1 - Ajuste tag de versão.
 * 0.1.0 - Versão incompleta mas jogavel, com muitos bugs para corrigir
 * 0.0.16 - Layout tela combate concluído
 * 0.0.15 - Layout tela combate
@@ -156,8 +157,8 @@ Para mais detalhes de como o jogo funciona, por favor consulte a [Wiki][wiki]_ d
 
 [wiki]: https://github.com/rogerfdeazevedo/timedeferro-appUtil/wiki
 
-[version-image]: https://img.shields.io/badge/Version-0.0.1-blue?style=for-the-badge&logo=appveyor
-[version-url]: https://img.shields.io/badge/version-0.0.1-blue
+[version-image]: https://img.shields.io/badge/Version-0.1.1-blue?style=for-the-badge&logo=appveyor
+[version-url]: https://img.shields.io/badge/version-0.1.1-blue
 [Frontend-image]: https://img.shields.io/badge/Frontend-android-green?style=for-the-badge
 [Frontend-url]: https://img.shields.io/badge/Frontend-android-green?style=for-the-badge
 [Backend-image]: https://img.shields.io/badge/Backend-Java%2011-important?style=for-the-badge
