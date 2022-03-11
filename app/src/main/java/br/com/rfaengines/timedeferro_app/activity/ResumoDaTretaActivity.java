@@ -56,19 +56,19 @@ public class ResumoDaTretaActivity extends AppCompatActivity {
 
     private void carregarComponentes(){
 
-        txtView_StatusJogador_Tentativas = findViewById(R.id.txtView_StatusJogador_Tentativas_ActivityResumoDaTreta);
+        txtView_StatusJogador_Tentativas = findViewById(R.id.resumoDaTretaActivity_txtView_StatusJogador_Tentativas);
 
-        txtView_Cenario = findViewById(R.id.txtView_Cenario_ActivityResumoDaTreta);
-        txtView_Problema = findViewById(R.id.txtView_Problema_ActivityResumoDaTreta);
-        txtView_Antagonista_Nome = findViewById(R.id.txtView_Antagonista_Nome_ActivityResumoDaTreta);
-        txtView_Antagonista_Historico = findViewById(R.id.txtView_Antagonista_Historico_ActivityResumoDaTreta);
-        txtView_Antagonista_Habilidade_1 = findViewById(R.id.txtView_Antagonista_Habilidade_1_ActivityResumoDaTreta);
-        txtView_Antagonista_Habilidade_2 = findViewById(R.id.txtView_Antagonista_Habilidade_2_ActivityResumoDaTreta);
-        txtView_Antagonista_Especial = findViewById(R.id.txtView_Antagonista_Especial_ActivityResumoDaTreta);
+        txtView_Cenario = findViewById(R.id.resumoDaTretaActivity_txtView_Cenario);
+        txtView_Problema = findViewById(R.id.resumoDaTretaActivity_txtView_Problema);
+        txtView_Antagonista_Nome = findViewById(R.id.resumoDaTretaActivity_txtView_Antagonista_Nome);
+        txtView_Antagonista_Historico = findViewById(R.id.resumoDaTretaActivity_txtView_Antagonista_Historico);
+        txtView_Antagonista_Habilidade_1 = findViewById(R.id.resumoDaTretaActivity_txtView_Antagonista_Habilidade_1);
+        txtView_Antagonista_Habilidade_2 = findViewById(R.id.resumoDaTretaActivity_txtView_Antagonista_Habilidade_2);
+        txtView_Antagonista_Especial = findViewById(R.id.resumoDaTretaActivity_txtView_Antagonista_Especial);
 
-        imgView_Antagonista = findViewById(R.id.imgView_Antagonista_ActivityResumoDaTreta);
+        imgView_Antagonista = findViewById(R.id.resumoDaTretaActivity_imgView_Antagonista);
 
-        btn_HeroiDoDia = findViewById(R.id.btn_HeroiDoDia_ActivityResumoDaTreta);
+        btn_HeroiDoDia = findViewById(R.id.resumoDaTretaActivity_btn_HeroiDoDia);
 
         gamePlay = GamePlayManager.getGamePlay();
 
@@ -166,23 +166,23 @@ public class ResumoDaTretaActivity extends AppCompatActivity {
 
         String nome = txtView_Antagonista_Nome.getText().toString();
 
-        if(getString(R.string.game_antagonista, getString(R.string.antagonista_1_nome)).equals(nome)) {
+        if(getString(R.string.game_antagonista, getString(R.string.db_antagonista_1_nome)).equals(nome)) {
             imgView_Antagonista.setImageResource(R.drawable.img_antagonista_1);
         }
 
-        if(getString(R.string.game_antagonista, getString(R.string.antagonista_2_nome)).equals(nome)) {
+        if(getString(R.string.game_antagonista, getString(R.string.db_antagonista_2_nome)).equals(nome)) {
             imgView_Antagonista.setImageResource(R.drawable.img_antagonista_2);
         }
 
-        if(getString(R.string.game_antagonista, getString(R.string.antagonista_3_nome)).equals(nome)) {
+        if(getString(R.string.game_antagonista, getString(R.string.db_antagonista_3_nome)).equals(nome)) {
             imgView_Antagonista.setImageResource(R.drawable.img_antagonista_3);
         }
 
-        if(getString(R.string.game_antagonista, getString(R.string.antagonista_4_nome)).equals(nome)) {
+        if(getString(R.string.game_antagonista, getString(R.string.db_antagonista_4_nome)).equals(nome)) {
             imgView_Antagonista.setImageResource(R.drawable.img_antagonista_4);
         }
 
-        if(getString(R.string.game_antagonista, getString(R.string.antagonista_5_nome)).equals(nome)) {
+        if(getString(R.string.game_antagonista, getString(R.string.db_antagonista_5_nome)).equals(nome)) {
             imgView_Antagonista.setImageResource(R.drawable.img_antagonista_5);
         }
 

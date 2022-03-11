@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        btn_NovoJogo = findViewById(R.id.btn_NovoJogo_ActivityMain);
+        btn_NovoJogo = findViewById(R.id.mainActivity_Btn_NovoJogo);
 
         btn_NovoJogo.setOnClickListener(new View.OnClickListener() {
             @Override

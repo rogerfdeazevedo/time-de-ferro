@@ -1,58 +1,93 @@
 <resources>
 
+    <!-- App Geral ################################################# -->
+
     <string name="app_name">TimeDeFerro</string>
     <string name="app_version">v.0.1.1</string>
-    <string name="app_from">Roger de Azevedo</string>
+    <string name="app_from">Mad Blue Factory | Roger de Azevedo</string>
 
-    <string name="title_activity_tutorial">Introdução com Professor Artigo</string>
-    <string name="title_activity_city_map">Tretas em Saranda City</string>
+    <!-- Main Activity ############################################# -->
 
-    <string name="game_log">Logs do combate</string>
+    <string name="mainActivity_btn_NewGame">Novo Jogo</string>
+
+    <!-- Historia Activity ######################################### -->
+
+    <string name="historiaActivity_title">Saranda City</string>
+    <string name="historiaActivity_description">Preciso que me ajude a enviar os <b>heróis mais adequados</b>, para cada <b>Treta</b> na cidade. O novo chefão do crime do Bairro Proibido <b>*** Lirou Diou ***</b> não economiza esforços para tocar o terror nas pessoas na cidade. </string>
+    <string name="historiaActivity_btn_next">Avançar</string>
+
+    <!-- MapaDaCidade Activity ###################################### -->
+
+    <string name="mapaDaCidadeActivity_title">Tretas em Saranda City</string>
+    <string name="mapaDaCidadeActivity_tutorial_title">Instruções do Jogo</string>
+    <string name="mapaDaCidadeActivity_tutorial_description">Observe bem os ícones de características nas <b>Tretas</b>. Escolha enviar o herói com os <b>atributos mais adequados</b> para cada situação.</string>
+
+    <!-- ResumoDaTreta Activity ##################################### -->
+
+    <string name="resumoDaTretaActivity_title">Tretas em Saranda City</string>
+    <string name="resumoDaTretaActivity_btn_select_hero">Herói do Dia</string>
+
+    <!-- HeroiDoDia Activity ######################################## -->
+
+    <string name="heroiDoDiaActivity_title">Tretas em Saranda City</string>
+    <string name="heroiDoDiaActivity_hero_title">Herói do Dia</string>
+    <string name="heroiDoDiaActivity_hero_name">Herói</string>
+    <string name="heroiDoDiaActivity_hero_background">Historico</string>
+    <string name="heroiDoDiaActivity_hero_power_origin">Origem Poder: %s</string>
+    <string name="heroiDoDiaActivity_hero_style">Estilo: %s</string>
+    <string name="heroiDoDiaActivity_btn_start_combat">Enviar Herói</string>
+    <string name="heroiDoDiaActivity_btn_hero_left">Herói Esquerda</string>
+    <string name="heroiDoDiaActivity_btn_hero_right">Herói Direita</string>
+
+    <!-- Estatísticas do Jogo ####################################### -->
+
     <string name="game_continue">Tentativas: %s</string>
     <string name="game_resumo_da_treta">Resumo da Treta</string>
-    <string name="game_heroi_do_dia">Herói do Dia</string>
     <string name="game_cenario">Lugar: %s</string>
     <string name="game_problema">Treta: %s</string>
-    <string name="game_personagem">Personagem</string>
-    <string name="game_energia">Energia: %s</string>
-    <string name="game_sorte">Sorte: %s</string>
     <string name="game_antagonista">Meliante: %s</string>
     <string name="game_antagonista_historico">Historico</string>
-    <string name="game_heroi">Herói</string>
-    <string name="game_heroi_historico">Historico</string>
-    <string name="game_heroi_origem_do_poder">Origem Poder: %s</string>
-    <string name="game_heroi_estilo">Estilo: %s</string>
     <string name="game_habilidades_title">**Habilidades</string>
     <string name="game_habilidade_1">Habilidade 1</string>
     <string name="game_habilidade_2">Habilidade 2</string>
     <string name="game_especial_title">**Especial</string>
     <string name="game_especial">Especial</string>
+
+    <!-- ############################################################ -->
+
+    <string name="game_log">Logs do combate</string>
+
+    <string name="game_personagem">Personagem</string>
+    <string name="game_energia">Energia: %s</string>
+    <string name="game_sorte">Sorte: %s</string>
+
     <string name="game_especial_pontos">Especial: %s</string>
     <string name="game_rank">Rank de Classificação</string>
     <string name="game_rank_classificacao">Classificação: %s</string>
     <string name="game_rank_score">Score</string>
     <string name="game_score_pontuacao">Pontos: %s</string>
 
-    <string name="game_title_history">Saranda City</string>
+
+    <string name="title_activity_tutorial">Introdução com Professor Artigo</string>
+
     <string name="game_title_tutorial">Instruções do Jogo</string>
 
-    <string name="game_desc_history">Preciso que me ajude a enviar os <b>heróis mais adequados</b>, para cada <b>Treta</b> na cidade. O novo chefão do crime do Bairro Proibido <b>*** Lirou Diou ***</b> não economiza esforços para tocar o terror nas pessoas na cidade. </string>
-    <string name="game_desc_tutorial">Observe bem os ícones de características nas <b>Tretas</b>. Escolha enviar o herói com os <b>atributos mais adequados</b> para cada situação.</string>
     <string name="game_desc_level">Clique no Lugar indicado para ver qual Treta está rolando ...</string>
 
-    <string name="btn_new_game">Novo Jogo</string>
-    <string name="btn_next">Avançar</string>
+
     <string name="btn_start">Começar</string>
-    <string name="btn_hero_select">Herói do Dia</string>
-    <string name="btn_start_combat">Enviar Herói</string>
-    <string name="btn_hero_left">Herói Esquerda</string>
-    <string name="btn_hero_right">Herói Direita</string>
+
+
     <string name="btn_mapa">Mapa de Saranda City</string>
     <string name="btn_hab_1">habilidade 1</string>
     <string name="btn_hab_2">habilidade 2</string>
     <string name="btn_especial">especial</string>
 
-    <string-array name="cenarios">
+    <!-- ############################################################ -->
+
+    <!-- Data Base ################################################## -->
+
+    <string-array name="db_cenarios">
         <item>Banco Verde</item>
         <item>Postinho</item>
         <item>Bingo Clandestino</item>
@@ -60,7 +95,7 @@
         <item>Beco da Facada</item>
     </string-array>
 
-    <string-array name="problemas">
+    <string-array name="db_problemas">
         <item>Discussão Política</item>
         <item>Sumiço de Isqueiro</item>
         <item>Carteado Viciado</item>
@@ -68,90 +103,90 @@
         <item>Conta na Pindura</item>
     </string-array>
 
-    <string name="mentor_nome">Professor Artigo</string>
-    <string name="mentor_desc">É um renomado “mestre-prático-teórico”, embasado na “literatura sagrada” da ciência e tecnologia. Ele é o mentor de um grupo de jovens heróis em treinamento, conhecidos como Time de Ferro. Ele precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problemaDTO na cidade de “Saranda City”. O novo chefão do crime do Bairro Proibido - Lirou Diou não economiza esforços para aterrorizar as pessoas na cidade.</string>
+    <string name="db_mentor_nome">Professor Artigo</string>
+    <string name="db_mentor_desc">É um renomado “mestre-prático-teórico”, embasado na “literatura sagrada” da ciência e tecnologia. Ele é o mentor de um grupo de jovens heróis em treinamento, conhecidos como Time de Ferro. Ele precisa escolher com cuidado, quais heróis são mais adequados para resolver cada missão e novo problemaDTO na cidade de “Saranda City”. O novo chefão do crime do Bairro Proibido - Lirou Diou não economiza esforços para aterrorizar as pessoas na cidade.</string>
 
-    <string name="vilao_nome">Lirou Diou, Pintier Raivoso</string>
-    <string name="vilao_desc">O novo chefão do crime do “Bairro Proibido”, durante algum tempo foi um simples e bom funcionário. Mas, sofria de uma rara condição que o deixava agitado quando era contrariado. Após grandes eventos em “Saranda City”, ele aproveitou o vácuo de poder para tomar o controle do submundo do crime no “Beco da Facada”. Isso afetou muito a ordem natural na região, e por isso os meliantes estão mais atrevidos do que nunca.</string>
+    <string name="db_vilao_nome">Lirou Diou, Pintier Raivoso</string>
+    <string name="db_vilao_desc">O novo chefão do crime do “Bairro Proibido”, durante algum tempo foi um simples e bom funcionário. Mas, sofria de uma rara condição que o deixava agitado quando era contrariado. Após grandes eventos em “Saranda City”, ele aproveitou o vácuo de poder para tomar o controle do submundo do crime no “Beco da Facada”. Isso afetou muito a ordem natural na região, e por isso os meliantes estão mais atrevidos do que nunca.</string>
 
-    <string name="antagonista_1_nome">Carlão</string>
-    <string name="antagonista_1_historico">Agiota que não mata</string>
-    <string name="antagonista_1_h1">Paulada na Molera</string>
-    <string name="antagonista_1_h2">Facada no bucho</string>
-    <string name="antagonista_1_esp">Vem que tem din-din</string>
+    <string name="db_antagonista_1_nome">Carlão</string>
+    <string name="db_antagonista_1_historico">Agiota que não mata</string>
+    <string name="db_antagonista_1_h1">Paulada na Molera</string>
+    <string name="db_antagonista_1_h2">Facada no bucho</string>
+    <string name="db_antagonista_1_esp">Vem que tem din-din</string>
 
-    <string name="antagonista_2_nome">Tasha Padonna</string>
-    <string name="antagonista_2_historico">Fumante compulsiva</string>
-    <string name="antagonista_2_h1">Arroto sagaz</string>
-    <string name="antagonista_2_h2">Grito de guerra</string>
-    <string name="antagonista_2_esp">Minha voz é assim por causa do *cigarro</string>
+    <string name="db_antagonista_2_nome">Tasha Padonna</string>
+    <string name="db_antagonista_2_historico">Fumante compulsiva</string>
+    <string name="db_antagonista_2_h1">Arroto sagaz</string>
+    <string name="db_antagonista_2_h2">Grito de guerra</string>
+    <string name="db_antagonista_2_esp">Minha voz é assim por causa do *cigarro</string>
 
-    <string name="antagonista_3_nome">Toninho</string>
-    <string name="antagonista_3_historico">Bêbado assanhado</string>
-    <string name="antagonista_3_h1">Amigo do peito</string>
-    <string name="antagonista_3_h2">De rosto colado</string>
-    <string name="antagonista_3_esp">Opa, passei a mão sem querer</string>
+    <string name="db_antagonista_3_nome">Toninho</string>
+    <string name="db_antagonista_3_historico">Bêbado assanhado</string>
+    <string name="db_antagonista_3_h1">Amigo do peito</string>
+    <string name="db_antagonista_3_h2">De rosto colado</string>
+    <string name="db_antagonista_3_esp">Opa, passei a mão sem querer</string>
 
-    <string name="antagonista_4_nome">Pingu Lin</string>
-    <string name="antagonista_4_historico">Cozinheiro asiático</string>
-    <string name="antagonista_4_h1">Pastel de “flango”</string>
-    <string name="antagonista_4_h2">Cabeça de "bagle"</string>
-    <string name="antagonista_4_esp">Essa “clane” não é de “cacholo”</string>
+    <string name="db_antagonista_4_nome">Pingu Lin</string>
+    <string name="db_antagonista_4_historico">Cozinheiro asiático</string>
+    <string name="db_antagonista_4_h1">Pastel de “flango”</string>
+    <string name="db_antagonista_4_h2">Cabeça de "bagle"</string>
+    <string name="db_antagonista_4_esp">Essa “clane” não é de “cacholo”</string>
 
-    <string name="antagonista_5_nome">Juninho</string>
-    <string name="antagonista_5_historico">Fanático político de apartamento</string>
-    <string name="antagonista_5_h1">Meu herói</string>
-    <string name="antagonista_5_h2">Cientista político</string>
-    <string name="antagonista_5_esp">Eles querem nos matar</string>
+    <string name="db_antagonista_5_nome">Juninho</string>
+    <string name="db_antagonista_5_historico">Fanático político de apartamento</string>
+    <string name="db_antagonista_5_h1">Meu herói</string>
+    <string name="db_antagonista_5_h2">Cientista político</string>
+    <string name="db_antagonista_5_esp">Eles querem nos matar</string>
 
-    <string name="heroi_1_nome">Motoqueiro Metal</string>
-    <string name="heroi_1_historico">Negociou sua alma com os antigos espíritos do metal, em troca de poderes. Pârpou precisa viver como um pagodeiro, exceto quando invoca seus poderes e se transforma em um vigilante mascarado.</string>
-    <string name="heroi_1_origem_poder">Sobrenatural</string>
-    <string name="heroi_1_estilo">Lutador</string>
-    <string name="heroi_1_tipo">Tesoura</string>
-    <string name="heroi_1_frase">“E ai Broo!”</string>
-    <string name="heroi_1_h1">Corrente Fatal</string>
-    <string name="heroi_1_h2">Fogo Roxo</string>
-    <string name="heroi_1_esp">Caveira Metal</string>
+    <string name="db_heroi_1_nome">Motoqueiro Metal</string>
+    <string name="db_heroi_1_historico">Negociou sua alma com os antigos espíritos do metal, em troca de poderes. Pârpou precisa viver como um pagodeiro, exceto quando invoca seus poderes e se transforma em um vigilante mascarado.</string>
+    <string name="db_heroi_1_origem_poder">Sobrenatural</string>
+    <string name="db_heroi_1_estilo">Lutador</string>
+    <string name="db_heroi_1_tipo">Tesoura</string>
+    <string name="db_heroi_1_frase">“E ai Broo!”</string>
+    <string name="db_heroi_1_h1">Corrente Fatal</string>
+    <string name="db_heroi_1_h2">Fogo Roxo</string>
+    <string name="db_heroi_1_esp">Caveira Metal</string>
 
-    <string name="heroi_2_nome">Homem-Jaguatirica</string>
-    <string name="heroi_2_historico">Crítico de restaurante “amador-profissional” no seu tempo livre, sempre à procura de novos pratos e novos sabores típicos. Gosta muito do Macarrão com almôndegas e Pizza Portuguesa.</string>
-    <string name="heroi_2_origem_poder">Sobrenatural</string>
-    <string name="heroi_2_estilo">Lutador</string>
-    <string name="heroi_2_tipo">Papel</string>
-    <string name="heroi_2_frase">“Eh us guri pai!”</string>
-    <string name="heroi_2_h1">Pulo do Felino</string>
-    <string name="heroi_2_h2">Rugido da Onça</string>
-    <string name="heroi_2_esp">Garra Pintada</string>
+    <string name="db_heroi_2_nome">Homem-Jaguatirica</string>
+    <string name="db_heroi_2_historico">Crítico de restaurante “amador-profissional” no seu tempo livre, sempre à procura de novos pratos e novos sabores típicos. Gosta muito do Macarrão com almôndegas e Pizza Portuguesa.</string>
+    <string name="db_heroi_2_origem_poder">Sobrenatural</string>
+    <string name="db_heroi_2_estilo">Lutador</string>
+    <string name="db_heroi_2_tipo">Papel</string>
+    <string name="db_heroi_2_frase">“Eh us guri pai!”</string>
+    <string name="db_heroi_2_h1">Pulo do Felino</string>
+    <string name="db_heroi_2_h2">Rugido da Onça</string>
+    <string name="db_heroi_2_esp">Garra Pintada</string>
 
-    <string name="heroi_3_nome">Mister Bolerinho</string>
-    <string name="heroi_3_historico">Administra a Casa de Banhos Holandês Voador e também é conhecido como vigilante mascarado aposentado, mas está de volta à ativa.</string>
-    <string name="heroi_3_origem_poder">Natural</string>
-    <string name="heroi_3_estilo">Suporte</string>
-    <string name="heroi_3_tipo">Pedra</string>
-    <string name="heroi_3_frase">“Os guri tão tudo loko”</string>
-    <string name="heroi_3_h1">Bolero Voador</string>
-    <string name="heroi_3_h2">Toalha Molhada</string>
-    <string name="heroi_3_esp">Tome-lhe coxa, tome-lhe coxa</string>
+    <string name="db_heroi_3_nome">Mister Bolerinho</string>
+    <string name="db_heroi_3_historico">Administra a Casa de Banhos Holandês Voador e também é conhecido como vigilante mascarado aposentado, mas está de volta à ativa.</string>
+    <string name="db_heroi_3_origem_poder">Natural</string>
+    <string name="db_heroi_3_estilo">Suporte</string>
+    <string name="db_heroi_3_tipo">Pedra</string>
+    <string name="db_heroi_3_frase">“Os guri tão tudo loko”</string>
+    <string name="db_heroi_3_h1">Bolero Voador</string>
+    <string name="db_heroi_3_h2">Toalha Molhada</string>
+    <string name="db_heroi_3_esp">Tome-lhe coxa, tome-lhe coxa</string>
 
-    <string name="heroi_4_nome">Escoteiro Mustache</string>
-    <string name="heroi_4_historico">Mestre dos disfarces, voz de veludo, as vezes oculto na multidão. Um vigilante solitário, mas que também luta contra o crime.</string>
-    <string name="heroi_4_origem_poder">Mutante</string>
-    <string name="heroi_4_estilo">Controle</string>
-    <string name="heroi_4_tipo">Tesoura</string>
-    <string name="heroi_4_frase">“Fala Lindinho!”</string>
-    <string name="heroi_4_h1">Nó de escoteiro</string>
-    <string name="heroi_4_h2">Mustache vivo</string>
-    <string name="heroi_4_esp">Relógio de pau</string>
+    <string name="db_heroi_4_nome">Escoteiro Mustache</string>
+    <string name="db_heroi_4_historico">Mestre dos disfarces, voz de veludo, as vezes oculto na multidão. Um vigilante solitário, mas que também luta contra o crime.</string>
+    <string name="db_heroi_4_origem_poder">Mutante</string>
+    <string name="db_heroi_4_estilo">Controle</string>
+    <string name="db_heroi_4_tipo">Tesoura</string>
+    <string name="db_heroi_4_frase">“Fala Lindinho!”</string>
+    <string name="db_heroi_4_h1">Nó de escoteiro</string>
+    <string name="db_heroi_4_h2">Mustache vivo</string>
+    <string name="db_heroi_4_esp">Relógio de pau</string>
 
-    <string name="heroi_5_nome">DJ Golfinho</string>
-    <string name="heroi_5_historico">As vezes participa de corridas de carros proibidas, e nas horas vagas é chamado em festas para “discotecar” (ele só aperta o play, mas tudo bem).</string>
-    <string name="heroi_5_origem_poder">Ciencia</string>
-    <string name="heroi_5_estilo">Controle</string>
-    <string name="heroi_5_tipo">Pedra</string>
-    <string name="heroi_5_frase">“Meu chapéu!”</string>
-    <string name="heroi_5_h1">Beijo do Golfinho</string>
-    <string name="heroi_5_h2">Canto Aquático</string>
-    <string name="heroi_5_esp">Mamífero Assanhado</string>
+    <string name="db_heroi_5_nome">DJ Golfinho</string>
+    <string name="db_heroi_5_historico">As vezes participa de corridas de carros proibidas, e nas horas vagas é chamado em festas para “discotecar” (ele só aperta o play, mas tudo bem).</string>
+    <string name="db_heroi_5_origem_poder">Ciencia</string>
+    <string name="db_heroi_5_estilo">Controle</string>
+    <string name="db_heroi_5_tipo">Pedra</string>
+    <string name="db_heroi_5_frase">“Meu chapéu!”</string>
+    <string name="db_heroi_5_h1">Beijo do Golfinho</string>
+    <string name="db_heroi_5_h2">Canto Aquático</string>
+    <string name="db_heroi_5_esp">Mamífero Assanhado</string>
 
 </resources>

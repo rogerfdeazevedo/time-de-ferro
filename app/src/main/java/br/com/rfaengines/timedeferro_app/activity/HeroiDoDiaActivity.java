@@ -103,22 +103,22 @@ public class HeroiDoDiaActivity extends AppCompatActivity {
 
     private void carregarComponentes(){
 
-        imgView_Heroi = findViewById(R.id.imgView_Heroi_ActivityHeroiDoDia);
+        imgView_Heroi = findViewById(R.id.heroiDoDiaActivity_imgView_Heroi);
 
-        txtView_Cenario = findViewById(R.id.txtView_Cenario_ActivityHeroiDoDia);
-        txtView_Problema = findViewById(R.id.txtView_Problema_ActivityHeroiDoDia);
+        txtView_Cenario = findViewById(R.id.heroiDoDiaActivity_txtView_Cenario);
+        txtView_Problema = findViewById(R.id.heroiDoDiaActivity_txtView_Problema);
 
-        txtView_Heroi_Nome = findViewById(R.id.txtView_Heroi_Nome_ActivityHeroiDoDia);
-        txtView_Heroi_Historico = findViewById(R.id.txtView_Heroi_Historico_ActivityHeroiDoDia);
-        txtView_Heroi_OrigemDoPoder = findViewById(R.id.txtView_Heroi_OrigemDoPoder_ActivityHeroiDoDia);
-        txtView_Heroi_Estilo = findViewById(R.id.txtView_Heroi_Estilo_ActivityHeroiDoDia);
-        txtView_Heroi_Habilidade_1 = findViewById(R.id.txtView_Heroi_Habilidade_1_ActivityHeroiDoDia);
-        txtView_Heroi_Habilidade_2 = findViewById(R.id.txtView_Heroi_Habilidade_2_ActivityHeroiDoDia);
+        txtView_Heroi_Nome = findViewById(R.id.heroiDoDiaActivity_txtView_Heroi_Nome);
+        txtView_Heroi_Historico = findViewById(R.id.heroiDoDiaActivity_txtView_Heroi_Historico);
+        txtView_Heroi_OrigemDoPoder = findViewById(R.id.heroiDoDiaActivity_txtView_Heroi_OrigemDoPoder);
+        txtView_Heroi_Estilo = findViewById(R.id.heroiDoDiaActivity_txtView_Heroi_Estilo);
+        txtView_Heroi_Habilidade_1 = findViewById(R.id.heroiDoDiaActivity_txtView_Heroi_Habilidade_1);
+        txtView_Heroi_Habilidade_2 = findViewById(R.id.heroiDoDiaActivity_txtView_Heroi_Habilidade_2);
         txtView_Heroi_Especial = findViewById(R.id.txtView_Heroi_Especial_ActivityHeroiDodia);
 
-        btn_HeroiEsquerda = findViewById(R.id.btn_HeroiEsquerda_ActivityHeroiDoDia);
-        btn_HeroiDireita = findViewById(R.id.btn_HeroiDireita_ActivityHeroiDoDia);
-        btn_EnviarHeroi = findViewById(R.id.btn_EnviarHeroi_ActivityHeroiDoDia);
+        btn_HeroiEsquerda = findViewById(R.id.heroiDoDiaActivity_btn_HeroiEsquerda);
+        btn_HeroiDireita = findViewById(R.id.heroiDoDiaActivity_btn_HeroiDireita);
+        btn_EnviarHeroi = findViewById(R.id.heroiDoDiaActivity_btn_EnviarHeroi);
 
         gamePlay = GamePlayManager.getGamePlay();
 
@@ -157,10 +157,10 @@ public class HeroiDoDiaActivity extends AppCompatActivity {
         txtView_Heroi_Historico.setText(historico);
 
         OrigemDoPoder origemDoPoder = gamePlay.getHerois().get(indexHeroi).getOrigemDoPoder();
-        txtView_Heroi_OrigemDoPoder.setText(getString(R.string.game_heroi_origem_do_poder, origemDoPoder.toString()));
+        txtView_Heroi_OrigemDoPoder.setText(getString(R.string.heroiDoDiaActivity_hero_power_origin, origemDoPoder.toString()));
 
         Estilo estilo = gamePlay.getHerois().get(indexHeroi).getEstilo();
-        txtView_Heroi_Estilo.setText(getString(R.string.game_heroi_estilo, estilo.toString()));
+        txtView_Heroi_Estilo.setText(getString(R.string.heroiDoDiaActivity_hero_style, estilo.toString()));
 
         String habilidade_1 = gamePlay.getHerois().get(indexHeroi).getHabilidades().get(0).getNome()
                 + ": " + gamePlay.getHerois().get(indexHeroi).getHabilidades().get(0).getValor();
@@ -259,23 +259,23 @@ public class HeroiDoDiaActivity extends AppCompatActivity {
 
         String nome = txtView_Heroi_Nome.getText().toString();
 
-        if(getString(R.string.heroi_1_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_1_nome).equals(nome)) {
             imgView_Heroi.setImageResource(R.drawable.img_heroi_1);
         }
 
-        if(getString(R.string.heroi_2_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_2_nome).equals(nome)) {
             imgView_Heroi.setImageResource(R.drawable.img_heroi_2);
         }
 
-        if(getString(R.string.heroi_3_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_3_nome).equals(nome)) {
             imgView_Heroi.setImageResource(R.drawable.img_heroi_3);
         }
 
-        if(getString(R.string.heroi_4_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_4_nome).equals(nome)) {
             imgView_Heroi.setImageResource(R.drawable.img_heroi_4);
         }
 
-        if(getString(R.string.heroi_5_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_5_nome).equals(nome)) {
             imgView_Heroi.setImageResource(R.drawable.img_heroi_5);
         }
 

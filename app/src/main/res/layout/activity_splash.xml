@@ -13,9 +13,8 @@
         android:background="@drawable/background"
         tools:context=".activity.MainActivity">
 
-
         <ImageView
-            android:id="@+id/imgView_logo"
+            android:id="@+id/splashActivity_imgView_logo"
             android:src="@drawable/img_logo"
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -26,10 +25,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/txtView_from" />
+            app:layout_constraintBottom_toTopOf="@+id/splashActivity_txtView_appfrom" />
 
         <TextView
-            android:id="@+id/txtView_from"
+            android:id="@+id/splashActivity_txtView_appfrom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -41,7 +40,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

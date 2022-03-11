@@ -14,7 +14,7 @@
         tools:context=".activity.TutorialActivity">
 
         <View
-            android:id="@+id/view_ContainerTitulo_ActivityHistoria"
+            android:id="@+id/historiaActivity_View_ContainerTitulo"
             style="@style/ContainerTitle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
             />
 
         <TextView
-            android:id="@+id/txtView_Titulo_ActivityHistoria"
+            android:id="@+id/historiaActivity_txtView_Titulo"
             style="@style/Title"
             android:text="@string/title_activity_tutorial"
             app:layout_constraintTop_toTopOf="parent"
@@ -30,64 +30,64 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <View
-            android:id="@+id/view_Container_CenaEscritorio_ActivityHistoria"
+            android:id="@+id/historiaActivity_view_Container_CenaEscritorio"
             style="@style/ContainerCenaBorder"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Titulo_ActivityHistoria"
+            app:layout_constraintTop_toBottomOf="@+id/historiaActivity_txtView_Titulo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/view_ContainerComponents_ActivityHistoria"/>
+            app:layout_constraintBottom_toTopOf="@+id/historiaActivity_view_ContainerComponents"/>
 
         <ImageView
-            android:id="@+id/imgView_CenaEscritorio_ActivityHistoria"
+            android:id="@+id/historiaActivity_imgView_CenaEscritorio"
             android:src="@drawable/img_escritorio"
             style="@style/ImgCena"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_CenaEscritorio_ActivityHistoria"/>
+            app:layout_constraintTop_toTopOf="@+id/historiaActivity_view_Container_CenaEscritorio"
+            app:layout_constraintStart_toStartOf="@+id/historiaActivity_view_Container_CenaEscritorio"
+            app:layout_constraintEnd_toEndOf="@+id/historiaActivity_view_Container_CenaEscritorio"
+            app:layout_constraintBottom_toBottomOf="@+id/historiaActivity_view_Container_CenaEscritorio"/>
 
         <View
-            android:id="@+id/view_ContainerComponents_ActivityHistoria"
+            android:id="@+id/historiaActivity_view_ContainerComponents"
             style="@style/ContainerComponents"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_Container_CenaEscritorio_ActivityHistoria" />
+            app:layout_constraintTop_toBottomOf="@+id/historiaActivity_view_Container_CenaEscritorio" />
 
         <TextView
-            android:id="@+id/txtView_InfoTitulo_ActivityHistoria"
+            android:id="@+id/historiaActivity_txtView_InfoTitulo"
             style="@style/TextView_Text_Tilulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:text="@string/game_title_history"
-            app:layout_constraintTop_toTopOf="@+id/view_ContainerComponents_ActivityHistoria"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerComponents_ActivityHistoria"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerComponents_ActivityHistoria"
-            app:layout_constraintBottom_toTopOf="@id/txtView_InfoDescricao_ActivityHistoria"
+            android:text="@string/historiaActivity_title"
+            app:layout_constraintTop_toTopOf="@+id/historiaActivity_view_ContainerComponents"
+            app:layout_constraintStart_toStartOf="@+id/historiaActivity_view_ContainerComponents"
+            app:layout_constraintEnd_toEndOf="@+id/historiaActivity_view_ContainerComponents"
+            app:layout_constraintBottom_toTopOf="@id/historiaActivity_txtView_InfoDescricao"
              />
 
         <TextView
-            android:id="@+id/txtView_InfoDescricao_ActivityHistoria"
+            android:id="@+id/historiaActivity_txtView_InfoDescricao"
             style="@style/TextView_Text_Descricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginBottom="100dp"
-            android:text="@string/game_desc_history"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_InfoTitulo_ActivityHistoria"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerComponents_ActivityHistoria"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerComponents_ActivityHistoria"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerComponents_ActivityHistoria"/>
+            android:text="@string/historiaActivity_description"
+            app:layout_constraintTop_toBottomOf="@+id/historiaActivity_txtView_InfoTitulo"
+            app:layout_constraintStart_toStartOf="@+id/historiaActivity_view_ContainerComponents"
+            app:layout_constraintEnd_toEndOf="@+id/historiaActivity_view_ContainerComponents"
+            app:layout_constraintBottom_toBottomOf="@+id/historiaActivity_view_ContainerComponents"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_Avancar_ActivityHistoria"
+            android:id="@+id/historiaActivity_btn_Avancar"
             style="@style/Buttom"
-            android:text="@string/btn_next"
-            app:layout_constraintTop_toBottomOf="@+id/view_ContainerComponents_ActivityHistoria"
+            android:text="@string/historiaActivity_btn_next"
+            app:layout_constraintTop_toBottomOf="@+id/historiaActivity_view_ContainerComponents"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />

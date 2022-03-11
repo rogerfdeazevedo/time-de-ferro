@@ -22,14 +22,14 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 activityMain();
             }
-        }, 3000); // 3 segundos
+        }, 3000);
 
     }
 
     private void activityMain() {
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
         startActivity(intent);
-        finish(); //Finaliza a activity, para que não seja possível voltar nela pelo menu de navegação padrão android.
+        finish();
     }
 
 }

@@ -232,23 +232,23 @@ public class CombateActivity extends AppCompatActivity {
 
         String nome = txtView_Heroi_Nome.getText().toString();
 
-        if(getString(R.string.heroi_1_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_1_nome).equals(nome)) {
             imgView_Versus_Heroi.setImageResource(R.drawable.img_heroi_1);
         }
 
-        if(getString(R.string.heroi_2_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_2_nome).equals(nome)) {
             imgView_Versus_Heroi.setImageResource(R.drawable.img_heroi_2);
         }
 
-        if(getString(R.string.heroi_3_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_3_nome).equals(nome)) {
             imgView_Versus_Heroi.setImageResource(R.drawable.img_heroi_3);
         }
 
-        if(getString(R.string.heroi_4_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_4_nome).equals(nome)) {
             imgView_Versus_Heroi.setImageResource(R.drawable.img_heroi_4);
         }
 
-        if(getString(R.string.heroi_5_nome).equals(nome)) {
+        if(getString(R.string.db_heroi_5_nome).equals(nome)) {
             imgView_Versus_Heroi.setImageResource(R.drawable.img_heroi_5);
         }
 
@@ -258,23 +258,23 @@ public class CombateActivity extends AppCompatActivity {
 
         String nome = txtView_Antagonista_Nome.getText().toString();
 
-        if(getString(R.string.antagonista_1_nome).equals(nome)) {
+        if(getString(R.string.db_antagonista_1_nome).equals(nome)) {
             imgView_Versus_Antagonista.setImageResource(R.drawable.img_antagonista_1);
         }
 
-        if(getString(R.string.antagonista_2_nome).equals(nome)) {
+        if(getString(R.string.db_antagonista_2_nome).equals(nome)) {
             imgView_Versus_Antagonista.setImageResource(R.drawable.img_antagonista_2);
         }
 
-        if(getString(R.string.antagonista_3_nome).equals(nome)) {
+        if(getString(R.string.db_antagonista_3_nome).equals(nome)) {
             imgView_Versus_Antagonista.setImageResource(R.drawable.img_antagonista_3);
         }
 
-        if(getString(R.string.antagonista_4_nome).equals(nome)) {
+        if(getString(R.string.db_antagonista_4_nome).equals(nome)) {
             imgView_Versus_Antagonista.setImageResource(R.drawable.img_antagonista_4);
         }
 
-        if(getString(R.string.antagonista_5_nome).equals(nome)) {
+        if(getString(R.string.db_antagonista_5_nome).equals(nome)) {
             imgView_Versus_Antagonista.setImageResource(R.drawable.img_antagonista_5);
         }
 
