@@ -3,7 +3,7 @@
     <!-- App Geral ################################################# -->
 
     <string name="app_name">TimeDeFerro</string>
-    <string name="app_version">v.0.1.1</string>
+    <string name="app_version">v.0.1.2</string>
     <string name="app_from">Mad Blue Factory | Roger de Azevedo</string>
 
     <!-- Main Activity ############################################# -->
