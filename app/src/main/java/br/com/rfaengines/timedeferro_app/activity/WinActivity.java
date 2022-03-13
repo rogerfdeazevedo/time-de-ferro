@@ -26,11 +26,10 @@ public class WinActivity extends AppCompatActivity {
 
     }
 
-
     private void proximaTela() {
         Intent intent = new Intent(WinActivity.this, MapaDaCidadeActivity.class);
         startActivity(intent);
-        finish(); //Finaliza a activity, para que não seja possível voltar nela pelo menu de navegação padrão android.
+        finish();
     }
 
 }

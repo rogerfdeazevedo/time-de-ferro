@@ -14,152 +14,152 @@
         tools:context=".activity.TutorialActivity">
 
         <View
-            android:id="@+id/view_ContainerTitulo_ActivityCombate"
+            android:id="@+id/combateActivity_view_ContainerTitulo"
             style="@style/ContainerTitle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/txtView_Titulo_ActivityCombate"
+            android:id="@+id/combateActivity_txtView"
             style="@style/Title"
-            android:text="@string/title_activity_city_map"
+            android:text="@string/combateActivity_title"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <View
-            android:id="@+id/view_ContainerBorder_ActivityCombate"
+            android:id="@+id/combateActivity_view_ContainerBorder"
             style="@style/ContainerCityBackgroundBorder"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Titulo_ActivityCombate"
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_txtView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageView
-            android:id="@+id/imgView_CityBackground_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_CityBackground"
             android:src="@drawable/img_city_background"
             style="@style/ImgCityBackground"
-            app:layout_constraintTop_toTopOf="@+id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_ContainerBorder"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_ContainerBorder" />
 
         <ImageView
-            android:id="@+id/imgView_CityMap_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_CityMap"
             android:src="@drawable/img_city_map"
             style="@style/ImgCityMap"
-            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder_ActivityCombate"/>
+            app:layout_constraintTop_toTopOf="@id/combateActivity_view_ContainerBorder"
+            app:layout_constraintStart_toStartOf="@id/combateActivity_view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/combateActivity_view_ContainerBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_ContainerBorder"/>
 
         <View
-            android:id="@+id/view_Container_StatusPersonagens_ActivityCombate"
+            android:id="@+id/combateActivity_view_Container_StatusPersonagens"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:background="@drawable/container_logo"
-            app:layout_constraintTop_toTopOf="@id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/view_Container_Log_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@id/view_ContainerBorder_ActivityCombate"
+            app:layout_constraintTop_toTopOf="@id/combateActivity_view_ContainerBorder"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_view_Container_Log"
+            app:layout_constraintStart_toStartOf="@id/combateActivity_view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@id/combateActivity_view_ContainerBorder"
              />
 
         <TextView
-            android:id="@+id/txtView_Heroi_Nome_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Heroi_Nome"
             style="@style/TextView_Text_Tilulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_personagem"
             android:textAlignment="gravity"
             android:gravity="right"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/txtView_Heroi_Energia_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/imgView_Status_Ico_Personagem_ActivityCombate"
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_txtView_Heroi_Energia"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_imgView_Status_Ico_Personagem"
             />
 
         <TextView
-            android:id="@+id/txtView_Heroi_Energia_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Heroi_Energia"
             style="@style/TextView_Text_Descricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_energia"
             android:textAlignment="gravity"
             android:gravity="left"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Heroi_Nome_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/txtView_Heroi_Sorte_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/imgView_Status_Ico_Energia_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_txtView_Heroi_Nome"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_txtView_Heroi_Sorte"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_imgView_Status_Ico_Energia" />
 
         <TextView
-            android:id="@+id/txtView_Heroi_Sorte_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Heroi_Sorte"
             style="@style/TextView_Text_Descricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_sorte"
             android:textAlignment="gravity"
             android:gravity="left"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Heroi_Energia_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/txtView_Heroi_Especial_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/imgView_Status_Ico_Sorte_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_txtView_Heroi_Energia"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_txtView_Heroi_Especial"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_imgView_Status_Ico_Sorte" />
 
         <TextView
-            android:id="@+id/txtView_Heroi_Especial_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Heroi_Especial"
             style="@style/TextView_Text_Descricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_especial_pontos"
             android:textAlignment="gravity"
             android:gravity="left"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Heroi_Sorte_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/imgView_Status_Ico_Especial_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_txtView_Heroi_Sorte"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_imgView_Status_Ico_Especial" />
 
         <ImageView
-            android:id="@+id/imgView_Status_Ico_Personagem_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_Status_Ico_Personagem"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:src="@drawable/img_char_silhuete_c"
-            app:layout_constraintTop_toTopOf="@id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/imgView_Status_Ico_Energia_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@id/txtView_Heroi_Nome_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@id/txtView_Antagonista_Nome_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_imgView_Status_Ico_Energia"
+            app:layout_constraintStart_toEndOf="@id/combateActivity_txtView_Heroi_Nome"
+            app:layout_constraintEnd_toStartOf="@id/combateActivity_txtView_Antagonista_Nome" />
 
         <ImageView
-            android:id="@+id/imgView_Status_Ico_Energia_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_Status_Ico_Energia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/img_ico_energia"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_Status_Ico_Personagem_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/imgView_Status_Ico_Sorte_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/txtView_Heroi_Energia_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/txtView_Antagonista_Energia_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_imgView_Status_Ico_Personagem"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_imgView_Status_Ico_Sorte"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_txtView_Heroi_Energia"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_txtView_Antagonista_Energia" />
 
         <ImageView
-            android:id="@+id/imgView_Status_Ico_Sorte_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_Status_Ico_Sorte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/img_ico_sorte"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_Status_Ico_Energia_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/imgView_Status_Ico_Especial_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/txtView_Heroi_Sorte_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/txtView_Antagonista_Sorte_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_imgView_Status_Ico_Energia"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_imgView_Status_Ico_Especial"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_txtView_Heroi_Sorte"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_txtView_Antagonista_Sorte" />
 
         <ImageView
-            android:id="@+id/imgView_Status_Ico_Especial_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_Status_Ico_Especial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/img_ico_especial"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_Status_Ico_Sorte_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/txtView_Heroi_Especial_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/txtView_Antagonista_Especial_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_imgView_Status_Ico_Sorte"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_txtView_Heroi_Especial"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_txtView_Antagonista_Especial" />
 
         <TextView
-            android:id="@+id/txtView_Antagonista_Nome_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Antagonista_Nome"
             style="@style/TextView_Text_Tilulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,162 +167,162 @@
             android:text="@string/game_personagem"
             android:textAlignment="gravity"
             android:gravity="left"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/txtView_Antagonista_Energia_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/imgView_Status_Ico_Personagem_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_StatusPersonagens_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_txtView_Antagonista_Energia"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_imgView_Status_Ico_Personagem"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_Container_StatusPersonagens" />
 
 
         <TextView
-            android:id="@+id/txtView_Antagonista_Energia_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Antagonista_Energia"
             style="@style/TextView_Text_Descricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_energia"
             android:textAlignment="gravity"
             android:gravity="right"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Antagonista_Nome_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/txtView_Antagonista_Sorte_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/imgView_Status_Ico_Energia_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_StatusPersonagens_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_txtView_Antagonista_Nome"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_txtView_Antagonista_Sorte"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_imgView_Status_Ico_Energia"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_Container_StatusPersonagens" />
 
         <TextView
-            android:id="@+id/txtView_Antagonista_Sorte_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Antagonista_Sorte"
             style="@style/TextView_Text_Descricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_sorte"
             android:textAlignment="gravity"
             android:gravity="right"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Antagonista_Energia_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/txtView_Antagonista_Especial_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/imgView_Status_Ico_Sorte_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_StatusPersonagens_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_txtView_Antagonista_Energia"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_txtView_Antagonista_Especial"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_imgView_Status_Ico_Sorte"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_Container_StatusPersonagens" />
 
         <TextView
-            android:id="@+id/txtView_Antagonista_Especial_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Antagonista_Especial"
             style="@style/TextView_Text_Descricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_especial_pontos"
             android:textAlignment="gravity"
             android:gravity="right"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_Antagonista_Sorte_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/imgView_Status_Ico_Especial_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_StatusPersonagens_ActivityCombate" />
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_txtView_Antagonista_Sorte"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_imgView_Status_Ico_Especial"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_Container_StatusPersonagens" />
 
         <View
-            android:id="@+id/view_Container_Log_ActivityCombate"
+            android:id="@+id/combateActivity_view_Container_Log"
             android:background="@drawable/container_components"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/view_Container_StatusPersonagens_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder_ActivityCombate"
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_view_Container_StatusPersonagens"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_ContainerBorder"
             />
 
         <TextView
-            android:id="@+id/txtView_Log_ActivityCombate"
+            android:id="@+id/combateActivity_txtView_Log"
             style="@style/TextView_Text_Descricao"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:text="@string/game_log"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_Log_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_Log_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_Log_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_Log_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_Container_Log"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_Container_Log"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_Container_Log"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_Container_Log" />
 
         <View
-            android:id="@+id/view_Container_Versus_ActivityCombate"
+            android:id="@+id/combateActivity_view_Container_Versus"
             android:background="@color/purple_ref_4_transparent"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/view_Container_Log_ActivityCombate"
-            app:layout_constraintBottom_toTopOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder_ActivityCombate"
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_view_Container_Log"
+            app:layout_constraintBottom_toTopOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_ContainerBorder"
             />
 
         <ImageView
-            android:id="@+id/imgView_Versus_Heroi_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_Versus_Heroi"
             android:src="@drawable/img_char_silhuete_b"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/imgView_Versus_VS_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_imgView_Versus_VS" />
 
         <ImageView
-            android:id="@+id/imgView_Versus_VS_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_Versus_VS"
             android:src="@drawable/img_versus"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/imgView_Versus_Heroi_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/imgView_Versus_Antagonista_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_imgView_Versus_Heroi"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_imgView_Versus_Antagonista" />
 
         <ImageView
-            android:id="@+id/imgView_Versus_Antagonista_ActivityCombate"
+            android:id="@+id/combateActivity_imgView_Versus_Antagonista"
             android:src="@drawable/img_char_silhuete_a"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/imgView_Versus_VS_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_Versus_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_imgView_Versus_VS"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_Container_Versus" />
 
 
         <View
-            android:id="@+id/view_ContainerButton_ActivityCombate"
+            android:id="@+id/combateActivity_view_ContainerButton"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            app:layout_constraintTop_toBottomOf="@+id/view_Container_Versus_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerBorder_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerBorder_ActivityCombate"
+            app:layout_constraintTop_toBottomOf="@+id/combateActivity_view_Container_Versus"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_ContainerBorder"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_ContainerBorder"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_ContainerBorder"
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_Habilidade_1_ActivityCombate"
+            android:id="@+id/combateActivity_btn_Habilidade_1"
             android:background="@drawable/buttom"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn_hab_1"
-            app:layout_constraintTop_toTopOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintStart_toStartOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/btn_Habilidade_2_ActivityCombate" />
+            android:text="@string/combateActivity_btn_hab_1"
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintStart_toStartOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_btn_Habilidade_2" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_Habilidade_2_ActivityCombate"
+            android:id="@+id/combateActivity_btn_Habilidade_2"
             android:background="@drawable/buttom"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn_hab_2"
-            app:layout_constraintTop_toTopOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/btn_Habilidade_1_ActivityCombate"
-            app:layout_constraintEnd_toStartOf="@+id/btn_Especial_ActivityCombate" />
+            android:text="@string/combateActivity_btn_hab_2"
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_btn_Habilidade_1"
+            app:layout_constraintEnd_toStartOf="@+id/combateActivity_btn_Especial" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_Especial_ActivityCombate"
+            android:id="@+id/combateActivity_btn_Especial"
             android:background="@drawable/buttom"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn_especial"
+            android:text="@string/combateActivity_btn_especial"
             android:visibility="invisible"
-            app:layout_constraintTop_toTopOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintBottom_toBottomOf="@+id/view_ContainerButton_ActivityCombate"
-            app:layout_constraintStart_toEndOf="@+id/btn_Habilidade_2_ActivityCombate"
-            app:layout_constraintEnd_toEndOf="@+id/view_ContainerButton_ActivityCombate" />
+            app:layout_constraintTop_toTopOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintBottom_toBottomOf="@+id/combateActivity_view_ContainerButton"
+            app:layout_constraintStart_toEndOf="@+id/combateActivity_btn_Habilidade_2"
+            app:layout_constraintEnd_toEndOf="@+id/combateActivity_view_ContainerButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

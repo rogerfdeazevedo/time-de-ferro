@@ -78,13 +78,13 @@ public class MapaDaCidadeActivity extends AppCompatActivity {
 
     private void carregarComponentes(){
 
-        txtView_StatusJogador_Tentativas = findViewById(R.id.txtView_StatusJogador_Tentativas_ActivityMapaDaCidade);
+        txtView_StatusJogador_Tentativas = findViewById(R.id.mapaDaCidadeActivity_txtView_StatusJogador_Tentativas);
 
-        imgView_Lvl1 = findViewById(R.id.imgView_Lvl1_ActivityMapaDaCidade);
-        imgView_Lvl2 = findViewById(R.id.imgView_Lvl2_ActivityMapaDaCidade);
-        imgView_Lvl3 = findViewById(R.id.imgView_Lvl3_ActivityMapaDaCidade);
-        imgView_Lvl4 = findViewById(R.id.imgView_Lvl4_ActivityMapaDaCidade);
-        imgView_Lvl5 = findViewById(R.id.imgView_Lvl5_ActivityMapaDaCidade);
+        imgView_Lvl1 = findViewById(R.id.mapaDaCidadeActivity_imgView_Lvl1);
+        imgView_Lvl2 = findViewById(R.id.mapaDaCidadeActivity_imgView_Lvl2);
+        imgView_Lvl3 = findViewById(R.id.mapaDaCidadeActivity_imgView_Lvl3);
+        imgView_Lvl4 = findViewById(R.id.mapaDaCidadeActivity_imgView_Lvl4);
+        imgView_Lvl5 = findViewById(R.id.mapaDaCidadeActivity_imgView_Lvl5);
 
         gamePlay = GamePlayManager.getGamePlay();
     }

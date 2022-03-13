@@ -12,7 +12,8 @@
 
     <!-- Historia Activity ######################################### -->
 
-    <string name="historiaActivity_title">Saranda City</string>
+    <string name="historiaActivity_title">Introdução com Professor Artigo</string>
+    <string name="historiaActivity_subtitle">Saranda City</string>
     <string name="historiaActivity_description">Preciso que me ajude a enviar os <b>heróis mais adequados</b>, para cada <b>Treta</b> na cidade. O novo chefão do crime do Bairro Proibido <b>*** Lirou Diou ***</b> não economiza esforços para tocar o terror nas pessoas na cidade. </string>
     <string name="historiaActivity_btn_next">Avançar</string>
 
@@ -39,7 +40,27 @@
     <string name="heroiDoDiaActivity_btn_hero_left">Herói Esquerda</string>
     <string name="heroiDoDiaActivity_btn_hero_right">Herói Direita</string>
 
-    <!-- Estatísticas do Jogo ####################################### -->
+    <!-- Combate Activity ########################################### -->
+
+    <string name="combateActivity_title">Tretas em Saranda City</string>
+    <string name="combateActivity_btn_hab_1">habilidade 1</string>
+    <string name="combateActivity_btn_hab_2">habilidade 2</string>
+    <string name="combateActivity_btn_especial">especial</string>
+
+    <!-- GameOver Activity ########################################## -->
+
+    <string name="gameOverActivity_title">Tretas em Saranda City</string>
+
+    <!-- Win Activity ############################################### -->
+
+    <string name="winActivity_title">Tretas em Saranda City</string>
+
+    <!-- Rank Activity ############################################### -->
+
+    <string name="rankActivity_title">Tretas em Saranda City</string>
+    <string name="rankActivity_btn_mapa">Mapa de Saranda City</string>
+
+    <!-- Estatísticas de Jogo ####################################### -->
 
     <string name="game_continue">Tentativas: %s</string>
     <string name="game_resumo_da_treta">Resumo da Treta</string>
@@ -52,38 +73,15 @@
     <string name="game_habilidade_2">Habilidade 2</string>
     <string name="game_especial_title">**Especial</string>
     <string name="game_especial">Especial</string>
-
-    <!-- ############################################################ -->
-
-    <string name="game_log">Logs do combate</string>
-
     <string name="game_personagem">Personagem</string>
     <string name="game_energia">Energia: %s</string>
     <string name="game_sorte">Sorte: %s</string>
-
     <string name="game_especial_pontos">Especial: %s</string>
+    <string name="game_log">Logs do combate</string>
     <string name="game_rank">Rank de Classificação</string>
     <string name="game_rank_classificacao">Classificação: %s</string>
     <string name="game_rank_score">Score</string>
     <string name="game_score_pontuacao">Pontos: %s</string>
-
-
-    <string name="title_activity_tutorial">Introdução com Professor Artigo</string>
-
-    <string name="game_title_tutorial">Instruções do Jogo</string>
-
-    <string name="game_desc_level">Clique no Lugar indicado para ver qual Treta está rolando ...</string>
-
-
-    <string name="btn_start">Começar</string>
-
-
-    <string name="btn_mapa">Mapa de Saranda City</string>
-    <string name="btn_hab_1">habilidade 1</string>
-    <string name="btn_hab_2">habilidade 2</string>
-    <string name="btn_especial">especial</string>
-
-    <!-- ############################################################ -->
 
     <!-- Data Base ################################################## -->
 

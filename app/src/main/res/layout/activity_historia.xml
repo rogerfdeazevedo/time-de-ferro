@@ -24,7 +24,7 @@
         <TextView
             android:id="@+id/historiaActivity_txtView_Titulo"
             style="@style/Title"
-            android:text="@string/title_activity_tutorial"
+            android:text="@string/historiaActivity_title"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -62,7 +62,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:text="@string/historiaActivity_title"
+            android:text="@string/historiaActivity_subtitle"
             app:layout_constraintTop_toTopOf="@+id/historiaActivity_view_ContainerComponents"
             app:layout_constraintStart_toStartOf="@+id/historiaActivity_view_ContainerComponents"
             app:layout_constraintEnd_toEndOf="@+id/historiaActivity_view_ContainerComponents"

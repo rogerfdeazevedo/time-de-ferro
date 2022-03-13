@@ -27,7 +27,6 @@ public class GameOverActivity extends AppCompatActivity {
 
     }
 
-
     private void proximaTela() {
 
         GamePlay gamePlay = GamePlayManager.getGamePlay();
@@ -39,6 +38,6 @@ public class GameOverActivity extends AppCompatActivity {
             Intent intent = new Intent(GameOverActivity.this, MapaDaCidadeActivity.class);
             startActivity(intent);
         }
-        finish(); //Finaliza a activity, para que não seja possível voltar nela pelo menu de navegação padrão android.
+        finish();
     }
 }

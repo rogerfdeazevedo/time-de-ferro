@@ -14,47 +14,47 @@
         tools:context=".activity.TutorialActivity">
 
         <View
-            android:id="@+id/view_Container_TituloActivity"
+            android:id="@+id/gameOverActivity_view_Container_Titulo"
             style="@style/ContainerTitle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/txtView_TituloActivity"
+            android:id="@+id/gameOverActivity_txtView_Titulo"
             style="@style/Title"
-            android:text="@string/title_activity_city_map"
+            android:text="@string/gameOverActivity_title"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <View
-            android:id="@+id/view_Container_Border"
+            android:id="@+id/gameOverActivity_view_Container_Border"
             style="@style/ContainerCityBackgroundBorder"
-            app:layout_constraintTop_toBottomOf="@+id/txtView_TituloActivity"
+            app:layout_constraintTop_toBottomOf="@+id/gameOverActivity_txtView_Titulo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageView
-            android:id="@+id/imgView_CityBackground"
+            android:id="@+id/gameOverActivity_imgView_CityBackground"
             android:src="@drawable/img_city_background"
             style="@style/ImgCityBackground"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_Border"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_Border"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_Border"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_Border" />
+            app:layout_constraintTop_toTopOf="@+id/gameOverActivity_view_Container_Border"
+            app:layout_constraintStart_toStartOf="@+id/gameOverActivity_view_Container_Border"
+            app:layout_constraintEnd_toEndOf="@+id/gameOverActivity_view_Container_Border"
+            app:layout_constraintBottom_toBottomOf="@+id/gameOverActivity_view_Container_Border" />
 
         <ImageView
-            android:id="@+id/imgView_gameOver"
+            android:id="@+id/gameOverActivity_imgView_gameOver"
             android:src="@drawable/img_gameover"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="350dp"
-            app:layout_constraintTop_toTopOf="@+id/view_Container_Border"
-            app:layout_constraintStart_toStartOf="@+id/view_Container_Border"
-            app:layout_constraintEnd_toEndOf="@+id/view_Container_Border"
-            app:layout_constraintBottom_toBottomOf="@+id/view_Container_Border" />
+            app:layout_constraintTop_toTopOf="@+id/gameOverActivity_view_Container_Border"
+            app:layout_constraintStart_toStartOf="@+id/gameOverActivity_view_Container_Border"
+            app:layout_constraintEnd_toEndOf="@+id/gameOverActivity_view_Container_Border"
+            app:layout_constraintBottom_toBottomOf="@+id/gameOverActivity_view_Container_Border" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

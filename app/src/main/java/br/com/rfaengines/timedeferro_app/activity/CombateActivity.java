@@ -1,9 +1,7 @@
 package br.com.rfaengines.timedeferro_app.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -12,16 +10,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-
-import com.google.android.material.snackbar.Snackbar;
 
 import br.com.rfaengines.timedeferro_app.R;
 import br.com.rfaengines.timedeferro_app.dto.personagem.AntagonistaDTO;
 import br.com.rfaengines.timedeferro_app.dto.personagem.HeroiDTO;
 import br.com.rfaengines.timedeferro_app.gameplay.GamePlay;
 import br.com.rfaengines.timedeferro_app.gameplay.GamePlayManager;
-import br.com.rfaengines.timedeferro_app.gameplay.Sistema;
 
 public class CombateActivity extends AppCompatActivity {
 
@@ -174,24 +168,24 @@ public class CombateActivity extends AppCompatActivity {
 
    private void carregarComponentes(){
 
-        txtView_Heroi_Nome = findViewById(R.id.txtView_Heroi_Nome_ActivityCombate);
-        txtView_Heroi_Energia = findViewById(R.id.txtView_Heroi_Energia_ActivityCombate);
-        txtView_Heroi_Sorte = findViewById(R.id.txtView_Heroi_Sorte_ActivityCombate);
-        txtView_Heroi_Especial = findViewById(R.id.txtView_Heroi_Especial_ActivityCombate);
+        txtView_Heroi_Nome = findViewById(R.id.combateActivity_txtView_Heroi_Nome);
+        txtView_Heroi_Energia = findViewById(R.id.combateActivity_txtView_Heroi_Energia);
+        txtView_Heroi_Sorte = findViewById(R.id.combateActivity_txtView_Heroi_Sorte);
+        txtView_Heroi_Especial = findViewById(R.id.combateActivity_txtView_Heroi_Especial);
 
-        txtView_Antagonista_Nome = findViewById(R.id.txtView_Antagonista_Nome_ActivityCombate);
-        txtView_Antagonista_Energia = findViewById(R.id.txtView_Antagonista_Energia_ActivityCombate);
-        txtView_Antagonista_Sorte = findViewById(R.id.txtView_Antagonista_Sorte_ActivityCombate);
-        txtView_Antagonista_Especial = findViewById(R.id.txtView_Antagonista_Especial_ActivityCombate);
+        txtView_Antagonista_Nome = findViewById(R.id.combateActivity_txtView_Antagonista_Nome);
+        txtView_Antagonista_Energia = findViewById(R.id.combateActivity_txtView_Antagonista_Energia);
+        txtView_Antagonista_Sorte = findViewById(R.id.combateActivity_txtView_Antagonista_Sorte);
+        txtView_Antagonista_Especial = findViewById(R.id.combateActivity_txtView_Antagonista_Especial);
 
-        txtView_Log = findViewById(R.id.txtView_Log_ActivityCombate);
+        txtView_Log = findViewById(R.id.combateActivity_txtView_Log);
 
-        imgView_Versus_Heroi = findViewById(R.id.imgView_Versus_Heroi_ActivityCombate);
-        imgView_Versus_Antagonista = findViewById(R.id.imgView_Versus_Antagonista_ActivityCombate);
+        imgView_Versus_Heroi = findViewById(R.id.combateActivity_imgView_Versus_Heroi);
+        imgView_Versus_Antagonista = findViewById(R.id.combateActivity_imgView_Versus_Antagonista);
 
-        btn_Habilidade_1 = findViewById(R.id.btn_Habilidade_1_ActivityCombate);
-        btn_Habilidade_2 = findViewById(R.id.btn_Habilidade_2_ActivityCombate);
-        btn_Especial = findViewById(R.id.btn_Especial_ActivityCombate);
+        btn_Habilidade_1 = findViewById(R.id.combateActivity_btn_Habilidade_1);
+        btn_Habilidade_2 = findViewById(R.id.combateActivity_btn_Habilidade_2);
+        btn_Especial = findViewById(R.id.combateActivity_btn_Especial);
 
         gamePlay = GamePlayManager.getGamePlay();
 
@@ -279,6 +273,5 @@ public class CombateActivity extends AppCompatActivity {
         }
 
     }
-
 
 }
